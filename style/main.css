@@ -12,6 +12,25 @@ body {
     background-color: #f5f5f5;
 }
 
+/* Link Styles - Mavi renkleri engellemek için */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:active {
+    color: inherit;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -70,10 +89,17 @@ body {
     cursor: pointer;
     border-radius: 3px;
     transition: all 0.3s ease;
+    color: #333;
+    text-decoration: none;
 }
 
 .lang-btn:hover {
     background-color: #e0e0e0;
+    color: #333;
+}
+
+.lang-btn:visited {
+    color: #333;
 }
 
 .lang-btn.active {
@@ -786,6 +812,20 @@ body {
 }
 
 .footer-contact-item span {
+    color: #e8e8e8;
+}
+
+.footer-contact-item a {
+    color: #e8e8e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-item a:hover {
+    color: #ffffff;
+}
+
+.footer-contact-item a:visited {
     color: #e8e8e8;
 }
 
