@@ -109,6 +109,15 @@ const translations = {
         "donation.terms.acceptance": "Bir bağış yaparak, bu şartları okuduğunuzu ve anladığınızı ve bunları tamamen kabul ettiğinizi onaylarsınız.",
 
         // Footer
+        "footer.welcome": "Diyanet Mevlana Moske'ye Hoş Geldiniz",
+        "footer.description": "Oslo'da bulunan Diyanet Mevlana Moske olarak Müslüman toplumumuza hizmet etmekten gurur duyuyoruz.",
+        "footer.org.number": "Org.nr: 971 490 942",
+        "footer.contact.title": "İletişim",
+        "footer.contact.phone": "Telefon:",
+        "footer.contact.email": "E-posta:",
+        "footer.contact.address": "Adres:",
+        "footer.contact.address.text": "Dusavikveien 35 4007, Stavanger, Norway",
+        "footer.map.title": "Konum",
         "footer.copyright": "© 2025 Diyanet Mevlana Moske. Tüm hakları saklıdır."
     },
 
@@ -221,6 +230,15 @@ const translations = {
         "donation.terms.acceptance": "Ved å gi en gave bekrefter du at du har lest og forstått disse vilkårene, og at du godtar dem i sin helhet.",
 
         // Footer
+        "footer.welcome": "Velkommen til Diyanet Mevlana Moske",
+        "footer.description": "Som Diyanet Mevlana Moske i Oslo er vi stolte av å tjene vårt muslimske samfunn.",
+        "footer.org.number": "Org.nr: 971 490 942",
+        "footer.contact.title": "Kontakt",
+        "footer.contact.phone": "Telefon:",
+        "footer.contact.email": "E-post:",
+        "footer.contact.address": "Adresse:",
+        "footer.contact.address.text": "Dusavikveien 35 4007, Stavanger, Norway",
+        "footer.map.title": "Lokasjon",
         "footer.copyright": "© 2025 Diyanet Mevlana Moske. Alle rettigheter forbeholdt."
     }
 };
