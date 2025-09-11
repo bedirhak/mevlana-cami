@@ -244,7 +244,7 @@ const translations = {
 };
 
 // Varsayılan dil
-const DEFAULT_LANGUAGE = 'tr';
+const DEFAULT_LANGUAGE = 'no';
 
 // Mevcut dili localStorage'dan al veya varsayılan kullan
 let currentLanguage = localStorage.getItem('selectedLanguage') || DEFAULT_LANGUAGE;
