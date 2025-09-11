@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vipps Bağış</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .donation-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        .donation-box h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .vipps-number {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #e65c00;
+        }
+
+        .qr-code {
+            margin: 20px 0;
+        }
+
+        .donate-btn {
+            display: inline-block;
+            background: #ff5b24;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .donate-btn:hover {
+            background: #e04e1c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="donation-box">
+        <h2>Vipps ile Bağış Yap</h2>
+
+        <!-- QR Kodu -->
+        <div class="qr-code">
+            <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=95074" alt="Vipps QR">
+
+        </div>
+
+        <!-- Vipps Numarası -->
+        <p class="vipps-number">Vipps Numaramız: <span id="vippsNumber"></span></p>
+
+        <!-- Buton (şimdilik sadece bilgi veriyor) -->
+        <a id="donateBtn" class="donate-btn" target="_blank">
+            Vipps Uygulamasını Aç
+        </a>
+    </div>
+
+    <script>
+        const vippsNumber = "95074";
+
+        // Numara yazdır
+        document.getElementById("vippsNumber").textContent = vippsNumber;
+
+        // QR kodu oluştur (bu sadece numarayı gösteriyor)
+        document.getElementById("vippsQr").src =
+            `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=${encodeURIComponent(vippsNumber)}`;
+
+        // Butonu Vipps linki yoksa sadece bilgilendirme yapalım
+        document.getElementById("donateBtn").addEventListener("click", () => {
+            alert(`Vipps uygulamasını açın ve '${vippsNumber}' numarasını arayın.`);
+        });
+    </script>
+
+</body>
+
+</html>

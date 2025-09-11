@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="page.home.title">Diyanet Mevlana Moske</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <img src="assets/images/logo.png" alt="Logo" class="logo">
+                <h1 class="site-title" data-translate="header.title">Diyanet Mevlana Moske</h1>
+            </div>
+            <nav class="header-nav">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="tr">TR</button>
+                    <button class="lang-btn" data-lang="no">NO</button>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav.home">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html" data-translate="nav.about">Hakkımızda</a></li>
+                    <li><a href="iletisim.html" data-translate="nav.contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h2 data-translate="home.welcome">Hoş Geldiniz</h2>
+                <p data-translate="home.description">Diyanet Mevlana Moske'ye hoş geldiniz. Toplumumuza hizmet etmek
+                    için buradayız.</p>
+            </div>
+        </section>
+
+        <section class="mevlana-banner">
+            <div class="banner-container">
+                <div class="banner-image">
+                    <img src="assets/images/banner.jpg" alt="Mevlana Banner" class="banner-img">
+                </div>
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <h2 data-translate="banner.title">Mevlana'nın Işığında</h2>
+                        <p data-translate="banner.quote">"Gel, ne olursan ol, yine gel..."</p>
+                        <p data-translate="banner.description">Hz. Mevlana'nın evrensel mesajları ile gönüllerde
+                            birleşen bir camiyiz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vipps-donation">
+            <div class="container">
+                <div class="vipps-header">
+                    <h2 data-translate="vipps.title">Vipps ile Bağış Yapın</h2>
+                    <p data-translate="vipps.description">Norveç'te en kolay ve güvenli bağış yöntemi</p>
+                </div>
+
+                <div class="vipps-content">
+                    <div class="vipps-info">
+                        <div class="vipps-logo-section">
+                            <div class="vipps-icon">💳</div>
+                            <h3 data-translate="vipps.quick.title">Hızlı ve Güvenli</h3>
+                        </div>
+
+                        <div class="vipps-number-display">
+                            <p data-translate="vipps.number.label">Vipps Numaramız:</p>
+                            <div class="vipps-number">95074</div>
+                        </div>
+
+                        <div class="vipps-steps">
+                            <h4 data-translate="vipps.steps.title">Nasıl Bağış Yapılır:</h4>
+                            <ol>
+                                <li data-translate="vipps.steps.step1">Vipps uygulamasını açın</li>
+                                <li data-translate="vipps.steps.step2">95074 numarasını arayın</li>
+                                <li data-translate="vipps.steps.step3">Bağış miktarınızı girin</li>
+                                <li data-translate="vipps.steps.step4">Gönder butonuna basın</li>
+                            </ol>
+                        </div>
+
+                        <button class="vipps-button" onclick="openVipps()" data-translate="vipps.button">
+                            📱 Vipps Uygulamasını Aç
+                        </button>
+
+                        <p class="vipps-note" data-translate="vipps.note">
+                            Bağışınız doğrudan cami hesabına ulaşacaktır
+                        </p>
+                    </div>
+
+                    <div class="vipps-visual">
+                        <div class="vipps-phone">
+                            <div class="phone-screen">
+                                <div class="vipps-app">
+                                    <div class="vipps-header-app">Vipps</div>
+                                    <div class="vipps-number-app">95074</div>
+                                    <div class="vipps-mosque-name" data-translate="vipps.mosque.name">Diyanet Mevlana
+                                        Moske</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-terms">
+            <div class="container">
+                <h2 data-translate="donation.terms.title">Bağış Şartları</h2>
+                <div class="terms-content">
+                    <p data-translate="donation.terms.intro">Bu şartlar, bağışçılardan camiye yapılan bağışları
+                        düzenlemektedir. Bir bağış yaparak, bağışçı olarak aşağıdaki şartları kabul etmiş olursunuz:</p>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.purpose.title">1. Bağışın Amacı</h3>
+                        <p data-translate="donation.terms.purpose.content">Cami tarafından alınan bağışlar yalnızca
+                            caminin faaliyetlerini desteklemek için kullanılacaktır, bunlar şunları içerir ancak
+                            bunlarla sınırlı değildir:</p>
+                        <ul>
+                            <li data-translate="donation.terms.purpose.item1">Cami tesislerinin işletilmesi ve bakımı.
+                            </li>
+                            <li data-translate="donation.terms.purpose.item2">Dini ve sosyal etkinlikler.</li>
+                            <li data-translate="donation.terms.purpose.item3">Cami tarafından onaylanan hayır işleri.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.voluntary.title">2. Gönüllülük ve Karşılık Verilmemesi</h3>
+                        <p data-translate="donation.terms.voluntary.content">Camiye yapılan bağışlar gönüllü
+                            katkılardır. Önceden açıkça anlaşılmadığı sürece, bağış yapmanın sonucu olarak herhangi bir
+                            karşılık veya hak verilmez.</p>
+                    </div>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.payment.title">3. Ödeme Yöntemleri</h3>
+                        <p data-translate="donation.terms.payment.content">Bağışlar aşağıdaki yöntemlerle yapılabilir:
+                        </p>
+                        <ul>
+                            <li data-translate="donation.terms.payment.item1">Banka havalesi.</li>
+                            <li data-translate="donation.terms.payment.item2">Vipps veya benzer ödeme hizmetleri.</li>
+                            <li data-translate="donation.terms.payment.item3">Şahsen gelip nakit ödeme.</li>
+                        </ul>
+                        <p data-translate="donation.terms.payment.note">Cami, bağışın transferi ile ilgili olarak ortaya
+                            çıkan herhangi bir ücret veya gecikme için sorumluluk kabul etmez.</p>
+                    </div>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.confirmation.title">4. Alındı Onayı</h3>
+                        <p data-translate="donation.terms.confirmation.content">İstenirse bağışçılara bağış için bir
+                            onay gönderilecektir. Onay, bağış miktarı, alınma tarihi ve bağışın kullanılacağı amaç
+                            hakkında bilgi içerebilir.</p>
+                    </div>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.usage.title">5. Bağışın Kullanımı</h3>
+                        <p data-translate="donation.terms.usage.content">Cami, fonları cami yönetim kurulu tarafından
+                            belirlenen önceliklere uygun olarak dağıtma hakkını saklı tutar. Belirli bir amaca ayrılan
+                            bağışlar, mümkün olduğunca belirtilen amaç için kullanılacaktır.</p>
+                    </div>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.refund.title">6. Geri Ödeme</h3>
+                        <p data-translate="donation.terms.refund.content">Bağışlar kural olarak geri ödenemez. Transfer
+                            sırasında bir hata oluşursa, bağışçıların durumu düzeltmek için derhal cami ile iletişime
+                            geçmelerini rica ederiz.</p>
+                    </div>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.privacy.title">7. Gizlilik</h3>
+                        <p data-translate="donation.terms.privacy.content">Bağışlarla ilgili olarak toplanan kişisel
+                            bilgiler, geçerli veri koruma mevzuatına uygun olarak işlenecektir. Bilgiler yalnızca
+                            bağışın yönetimi için kullanılacak ve rıza olmadan üçüncü taraflarla paylaşılmayacaktır.</p>
+                    </div>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.changes.title">8. Şartlarda Değişiklik</h3>
+                        <p data-translate="donation.terms.changes.content">Cami bu şartları değiştirme hakkını saklı
+                            tutar. Herhangi bir değişiklik caminin web sitesinde yayınlanacak veya uygun başka bir
+                            şekilde duyurulacaktır.</p>
+                    </div>
+
+                    <div class="term-item">
+                        <h3 data-translate="donation.terms.contact.title">9. İletişim Bilgileri</h3>
+                        <p data-translate="donation.terms.contact.content">Bağışlar veya bu şartlar hakkında sorularınız
+                            için cami ile şu bilgilerden iletişime geçebilirsiniz:</p>
+                        <ul>
+                            <li data-translate="donation.terms.contact.email">E-posta: leder@Mevlanamoske.no</li>
+                            <li data-translate="donation.terms.contact.phone">Telefon: +47 40144008</li>
+                            <li data-translate="donation.terms.contact.address">Adres: Verksgt 41 4013 Stavanger</li>
+                            <li data-translate="donation.terms.contact.org">Organizasyon Numarası: 971 490 942</li>
+                        </ul>
+                    </div>
+
+                    <div class="terms-acceptance">
+                        <p data-translate="donation.terms.acceptance">Bir bağış yaparak, bu şartları okuduğunuzu ve
+                            anladığınızı ve bunları tamamen kabul ettiğinizi onaylarsınız.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vipps-donate">
+
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-translate="footer.copyright">&copy; 2025 Diyanet Mevlana Moske. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/config.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        function openVipps() {
+            const vippsNumber = "95074";
+            const userAgent = navigator.userAgent.toLowerCase();
+
+            // Mobil cihaz kontrolü
+            if (/android|iphone|ipad|ipod|mobile/.test(userAgent)) {
+                // Mobil cihazlarda Vipps uygulamasını açmaya çalış
+                window.location.href = `vipps://95074`;
+
+                // Eğer Vipps uygulaması açılmazsa, kullanıcıyı bilgilendir
+                setTimeout(() => {
+                    const message = document.querySelector('[data-translate="vipps.alert"]')?.textContent ||
+                        `Vipps uygulamasını açın ve '${vippsNumber}' numarasını arayın.`;
+                    alert(message);
+                }, 1000);
+            } else {
+                // Masaüstü cihazlarda sadece bilgi ver
+                const message = document.querySelector('[data-translate="vipps.alert"]')?.textContent ||
+                    `Mobil cihazınızda Vipps uygulamasını açın ve '${vippsNumber}' numarasını arayın.`;
+                alert(message);
+            }
+        }
+    </script>
+</body>
+
+</html>
