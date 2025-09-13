@@ -164,6 +164,66 @@
                                 kişi numaranızı girin</small>
                         </div>
 
+                        <!-- Spouse Information Section -->
+                        <div class="spouse-section">
+                            <div class="section-header">
+                                <h3 data-translate="membership.form.spouse.title">Eş Bilgileri</h3>
+                                <p data-translate="membership.form.spouse.description">Eşinizin bilgilerini giriniz
+                                    (İsteğe bağlı)</p>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="spouseName" data-translate="membership.form.spouse.name.label">Eşin
+                                        Adı</label>
+                                    <input type="text" id="spouseName" name="es_adi"
+                                        data-translate-placeholder="membership.form.spouse.name.placeholder">
+                                    <i class="fas fa-user form-icon"></i>
+                                </div>
+                                <div class="form-group">
+                                    <label for="spouseSurname"
+                                        data-translate="membership.form.spouse.surname.label">Eşin Soyadı</label>
+                                    <input type="text" id="spouseSurname" name="es_soyadi"
+                                        data-translate-placeholder="membership.form.spouse.surname.placeholder">
+                                    <i class="fas fa-user form-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="spouseBirthDate"
+                                        data-translate="membership.form.spouse.birthDate.label">Doğum Tarihi</label>
+                                    <input type="date" id="spouseBirthDate" name="es_dogum_tarihi">
+                                    <i class="fas fa-calendar-alt form-icon"></i>
+                                </div>
+                                <div class="form-group">
+                                    <label for="spousePersonnummer"
+                                        data-translate="membership.form.spouse.personnummer.label">Kişi Numarası</label>
+                                    <input type="text" id="spousePersonnummer" name="es_kisi_numarasi"
+                                        pattern="[0-9]{11}" maxlength="11"
+                                        data-translate-placeholder="membership.form.spouse.personnummer.placeholder">
+                                    <i class="fas fa-id-card form-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="spouseEmail"
+                                        data-translate="membership.form.spouse.email.label">E-posta</label>
+                                    <input type="email" id="spouseEmail" name="es_email"
+                                        data-translate-placeholder="membership.form.spouse.email.placeholder">
+                                    <i class="fas fa-envelope form-icon"></i>
+                                </div>
+                                <div class="form-group">
+                                    <label for="spousePhone"
+                                        data-translate="membership.form.spouse.phone.label">Telefon</label>
+                                    <input type="tel" id="spousePhone" name="es_telefon"
+                                        data-translate-placeholder="membership.form.spouse.phone.placeholder">
+                                    <i class="fas fa-phone form-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Children Information Section -->
                         <div class="children-section">
                             <div class="section-header">

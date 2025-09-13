@@ -4111,6 +4111,29 @@ i.mobile-menu-icon {
     font-size: 1.2rem;
 }
 
+/* Spouse Section Styles */
+.spouse-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #f0f8ff;
+    border-radius: 15px;
+    border: 2px solid #2c5530;
+    border-style: solid;
+}
+
+.spouse-section .section-header h3 {
+    color: #2c5530;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.spouse-section .section-header p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    font-style: italic;
+}
+
 /* Children Section Styles */
 .children-section {
     margin: 2rem 0;
@@ -4360,6 +4383,16 @@ i.mobile-menu-icon {
     .donation-btn {
         width: 100%;
         justify-content: center;
+    }
+
+    /* Spouse section mobile responsiveness */
+    .spouse-section {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .spouse-section .section-header h3 {
+        font-size: 1.3rem;
     }
 
     /* Children section mobile responsiveness */
