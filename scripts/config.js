@@ -384,6 +384,12 @@ const translations = {
 
         "donation.terms.acceptance": "Bir bağış yaparak, bu şartları okuduğunuzu ve anladığınızı ve bunları tamamen kabul ettiğinizi onaylarsınız.",
 
+        // Donation Terms PDF
+        "donation.terms.pdf.fallback": "PDF görüntüleyiciniz bu dosyayı desteklemiyor.",
+        "donation.terms.pdf.download": "Buraya tıklayarak indirin",
+        "donation.terms.pdf.open": "Yeni Sekmede Aç",
+        "donation.terms.pdf.download.btn": "İndir",
+
         // Prayer Times
         "prayer.page.title": "Namaz Vakitleri",
         "prayer.page.subtitle": "Stavanger - Norveç için günlük namaz vakitleri",
@@ -766,7 +772,7 @@ const translations = {
         "construction.timeline.opening.date": "2026",
 
         // Donation Terms
-        "donation.terms.title": "Salgsvilkår for gaver",
+        "donation.terms.title": "Skattefradrag for gaver til Kirke og Moske",
         "donation.terms.short.description": "Kjære medlemmer, når du gir en gave til et godkjent tros- eller livssynssamfunn i Norge kan du få skattefradrag. 🔸 Maksimum fradrag: Opptil 25.000 NOK per år. 🔸 Minimum beløp: Minst 500 NOK per år. 🔸 Personlige opplysninger: Du må oppgi fullt navn og fødselsnummer (11 siffer). 🔸 Automatisk rapportering: Gaven rapporteres til Skatteetaten og fradraget legges automatisk inn i skattemeldingen din. Med din gave til moskeen støtter du samfunnet vårt og får samtidig skattefordel fra staten. 🤲 Din støtte gir både åndelig og økonomisk gevinst.",
         "donation.terms.button": "Vis gavevilkår",
         "donation.terms.intro": "Disse vilkårene regulerer gaver som blir gitt til moskeen fra bidragsytere. Ved å gi en gave, godtar du som bidragsyter de følgende vilkårene:",
@@ -810,6 +816,12 @@ const translations = {
         "donation.terms.contact.org": "Organisasjonsnummer: 971 490 942",
 
         "donation.terms.acceptance": "Ved å gi en gave bekrefter du at du har lest og forstått disse vilkårene, og at du godtar dem i sin helhet.",
+
+        // Donation Terms PDF
+        "donation.terms.pdf.fallback": "PDF-viseren støtter ikke denne filen.",
+        "donation.terms.pdf.download": "Klikk her for å laste ned",
+        "donation.terms.pdf.open": "Åpne i ny fane",
+        "donation.terms.pdf.download.btn": "Last ned",
 
         // Prayer Times
         "prayer.page.title": "Bønnetider",

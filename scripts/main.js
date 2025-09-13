@@ -198,8 +198,34 @@ function setupDonationModal() {
     const closeBtn = document.querySelector('.close-button');
 
     if (modal && openBtn && closeBtn) {
-        // Modal'ı aç
+        // Modal'ı aç ve PDF'i yükle
         openBtn.addEventListener('click', function () {
+            const currentLanguage = localStorage.getItem('selectedLanguage') || 'tr';
+            const pdfPath = currentLanguage === 'no' ? 'assets/pdf/taxNo.pdf' : 'assets/pdf/taxTr.pdf';
+
+            // PDF elementlerini ayarla
+            const pdfViewer = document.getElementById('pdf-viewer');
+            const pdfDownloadLink = document.getElementById('pdf-download-link');
+            const pdfOpenNewTab = document.getElementById('pdf-open-new-tab');
+            const pdfDownload = document.getElementById('pdf-download');
+
+            if (pdfViewer) {
+                pdfViewer.src = pdfPath;
+            }
+
+            if (pdfDownloadLink) {
+                pdfDownloadLink.href = pdfPath;
+            }
+
+            if (pdfOpenNewTab) {
+                pdfOpenNewTab.href = pdfPath;
+            }
+
+            if (pdfDownload) {
+                pdfDownload.href = pdfPath;
+                pdfDownload.download = currentLanguage === 'no' ? 'Skattefordeler_Norsk.pdf' : 'Vergi_Avantajlari_Turkce.pdf';
+            }
+
             modal.style.display = 'block';
             document.body.style.overflow = 'hidden'; // Arka plan scroll'unu engelle
         });
@@ -208,6 +234,12 @@ function setupDonationModal() {
         closeBtn.addEventListener('click', function () {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto'; // Scroll'u geri aç
+
+            // PDF kaynağını temizle
+            const pdfViewer = document.getElementById('pdf-viewer');
+            if (pdfViewer) {
+                pdfViewer.src = '';
+            }
         });
 
         // Modal dışına tıklanınca kapat
@@ -215,6 +247,12 @@ function setupDonationModal() {
             if (event.target === modal) {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto'; // Scroll'u geri aç
+
+                // PDF kaynağını temizle
+                const pdfViewer = document.getElementById('pdf-viewer');
+                if (pdfViewer) {
+                    pdfViewer.src = '';
+                }
             }
         });
 
@@ -223,6 +261,12 @@ function setupDonationModal() {
             if (event.key === 'Escape' && modal.style.display === 'block') {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto'; // Scroll'u geri aç
+
+                // PDF kaynağını temizle
+                const pdfViewer = document.getElementById('pdf-viewer');
+                if (pdfViewer) {
+                    pdfViewer.src = '';
+                }
             }
         });
     }

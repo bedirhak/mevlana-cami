@@ -93,98 +93,26 @@
 
         <!-- Donation Terms Modal -->
         <div id="donation-terms-modal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content pdf-modal">
                 <span class="close-button">&times;</span>
                 <h2 data-translate="donation.terms.title">Bağış Şartları</h2>
-                <div class="terms-content">
-                    <p data-translate="donation.terms.intro">Bu şartlar, bağışçılardan camiye yapılan bağışları
-                        düzenlemektedir. Bir bağış yaparak, bağışçı olarak aşağıdaki şartları kabul etmiş olursunuz:</p>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.purpose.title">1. Bağışın Amacı</h3>
-                        <p data-translate="donation.terms.purpose.content">Cami tarafından alınan bağışlar yalnızca
-                            caminin faaliyetlerini desteklemek için kullanılacaktır, bunlar şunları içerir ancak
-                            bunlarla sınırlı değildir:</p>
-                        <ul>
-                            <li data-translate="donation.terms.purpose.item1">Cami tesislerinin işletilmesi ve bakımı.
-                            </li>
-                            <li data-translate="donation.terms.purpose.item2">Dini ve sosyal etkinlikler.</li>
-                            <li data-translate="donation.terms.purpose.item3">Cami tarafından onaylanan hayır işleri.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.voluntary.title">2. Gönüllülük ve Karşılık Verilmemesi</h3>
-                        <p data-translate="donation.terms.voluntary.content">Camiye yapılan bağışlar gönüllü
-                            katkılardır. Önceden açıkça anlaşılmadığı sürece, bağış yapmanın sonucu olarak herhangi bir
-                            karşılık veya hak verilmez.</p>
-                    </div>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.payment.title">3. Ödeme Yöntemleri</h3>
-                        <p data-translate="donation.terms.payment.content">Bağışlar aşağıdaki yöntemlerle yapılabilir:
+                <div class="pdf-container">
+                    <iframe id="pdf-viewer" src="" width="100%" height="600" style="border: none; border-radius: 8px;">
+                        <p data-translate="donation.terms.pdf.fallback">PDF görüntüleyiciniz bu dosyayı desteklemiyor.
+                            <a id="pdf-download-link" href="" target="_blank"
+                                data-translate="donation.terms.pdf.download">Buraya tıklayarak indirin</a>.
                         </p>
-                        <ul>
-                            <li data-translate="donation.terms.payment.item1">Banka havalesi.</li>
-                            <li data-translate="donation.terms.payment.item2">Vipps veya benzer ödeme hizmetleri.</li>
-                            <li data-translate="donation.terms.payment.item3">Şahsen gelip nakit ödeme.</li>
-                        </ul>
-                        <p data-translate="donation.terms.payment.note">Cami, bağışın transferi ile ilgili olarak ortaya
-                            çıkan herhangi bir ücret veya gecikme için sorumluluk kabul etmez.</p>
-                    </div>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.confirmation.title">4. Alındı Onayı</h3>
-                        <p data-translate="donation.terms.confirmation.content">İstenirse bağışçılara bağış için bir
-                            onay gönderilecektir. Onay, bağış miktarı, alınma tarihi ve bağışın kullanılacağı amaç
-                            hakkında bilgi içerebilir.</p>
-                    </div>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.usage.title">5. Bağışın Kullanımı</h3>
-                        <p data-translate="donation.terms.usage.content">Cami, fonları cami yönetim kurulu tarafından
-                            belirlenen önceliklere uygun olarak dağıtma hakkını saklı tutar. Belirli bir amaca ayrılan
-                            bağışlar, mümkün olduğunca belirtilen amaç için kullanılacaktır.</p>
-                    </div>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.refund.title">6. Geri Ödeme</h3>
-                        <p data-translate="donation.terms.refund.content">Bağışlar kural olarak geri ödenemez. Transfer
-                            sırasında bir hata oluşursa, bağışçıların durumu düzeltmek için derhal cami ile iletişime
-                            geçmelerini rica ederiz.</p>
-                    </div>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.privacy.title">7. Gizlilik</h3>
-                        <p data-translate="donation.terms.privacy.content">Bağışlarla ilgili olarak toplanan kişisel
-                            bilgiler, geçerli veri koruma mevzuatına uygun olarak işlenecektir. Bilgiler yalnızca
-                            bağışın yönetimi için kullanılacak ve rıza olmadan üçüncü taraflarla paylaşılmayacaktır.</p>
-                    </div>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.changes.title">8. Şartlarda Değişiklik</h3>
-                        <p data-translate="donation.terms.changes.content">Cami bu şartları değiştirme hakkını saklı
-                            tutar. Herhangi bir değişiklik caminin web sitesinde yayınlanacak veya uygun başka bir
-                            şekilde duyurulacaktır.</p>
-                    </div>
-
-                    <div class="term-item">
-                        <h3 data-translate="donation.terms.contact.title">9. İletişim Bilgileri</h3>
-                        <p data-translate="donation.terms.contact.content">Bağışlar veya bu şartlar hakkında sorularınız
-                            için cami ile şu bilgilerden iletişime geçebilirsiniz:</p>
-                        <ul>
-                            <li data-translate="donation.terms.contact.email">E-posta: leder@Mevlanamoske.no</li>
-                            <li data-translate="donation.terms.contact.phone">Telefon: +47 40144008</li>
-                            <li data-translate="donation.terms.contact.address">Adres: Verksgt 41 4013 Stavanger</li>
-                            <li data-translate="donation.terms.contact.org">Organizasyon Numarası: 971 490 942</li>
-                        </ul>
-                    </div>
-
-                    <div class="terms-acceptance">
-                        <p data-translate="donation.terms.acceptance">Bir bağış yaparak, bu şartları okuduğunuzu ve
-                            anladığınızı ve bunları tamamen kabul ettiğinizi onaylarsınız.</p>
-                    </div>
+                    </iframe>
+                </div>
+                <div class="pdf-actions">
+                    <a id="pdf-open-new-tab" href="" target="_blank" class="pdf-btn">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span data-translate="donation.terms.pdf.open">Yeni Sekmede Aç</span>
+                    </a>
+                    <a id="pdf-download" href="" download class="pdf-btn secondary">
+                        <i class="fas fa-download"></i>
+                        <span data-translate="donation.terms.pdf.download.btn">İndir</span>
+                    </a>
                 </div>
             </div>
         </div>
