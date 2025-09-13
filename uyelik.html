@@ -54,6 +54,7 @@
             </div>
         </section>
 
+
         <section class="membership-intro">
             <div class="container">
                 <div class="intro-content">
@@ -74,6 +75,56 @@
                 </div>
             </div>
         </section>
+
+        <section class="registration-options">
+            <div class="container">
+                <div class="registration-info">
+                    <h2 data-translate="membership.registration.title">📝 Üyelik Başvuru Seçenekleri</h2>
+                    <p data-translate="membership.registration.description">
+                        Üye olmak için aşağıdaki seçeneklerden birini kullanabilirsiniz:
+                    </p>
+
+                    <div class="registration-methods">
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-computer"></i>
+                            </div>
+                            <h3 data-translate="membership.registration.online.title">Online Başvuru</h3>
+                            <p data-translate="membership.registration.online.description">
+                                Aşağıdaki formu site üzerinden doldurup gönderin. Hızlı ve pratik bir yöntemdir.
+                            </p>
+                            <a href="#membershipForm" class="method-btn primary">
+                                <i class="fas fa-arrow-down"></i>
+                                <span data-translate="membership.registration.online.button">Formu Doldur</span>
+                            </a>
+                        </div>
+
+                        <div class="method-card">
+                            <div class="method-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <h3 data-translate="membership.registration.pdf.title">PDF Form İndir</h3>
+                            <p data-translate="membership.registration.pdf.description">
+                                Formu indirin, doldurun ve <strong>leder@mevlanamoske.no</strong> mailine gönderin.
+                            </p>
+                            <button class="method-btn secondary" id="downloadFormBtn">
+                                <i class="fas fa-download"></i>
+                                <span data-translate="membership.registration.pdf.button">Formu İndir</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="contact-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p data-translate="membership.registration.note">
+                            Her iki yöntem de aynı şekilde işleme alınacaktır. Size en uygun olanını seçebilirsiniz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
         <section class="membership-form-section">
             <div class="container">
@@ -292,33 +343,47 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3 data-translate="footer.about.title">Diyanet Mevlana Moske</h3>
-                    <p data-translate="footer.about.text">Norveç'te yaşayan Müslüman topluma hizmet veren camimiz,
-                        ibadet
-                        ve eğitim faaliyetleriyle toplumumuza katkıda bulunmaktadır.</p>
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Diyanet Mevlana Moske">
+                        <h3 data-translate="footer.welcome">Diyanet Mevlana Moske'ye Hoş Geldiniz</h3>
+                    </div>
+                    <p data-translate="footer.description">
+                        Stavanger'de bulunan Diyanet Mevlana Moske olarak Müslüman toplumumuza hizmet etmekten gurur
+                        duyuyoruz.
+                    </p>
+                    <p data-translate="footer.org.number">Org.nr: 971 490 942</p>
                 </div>
-                <div class="footer-section">
-                    <h3 data-translate="footer.quick.title">Hızlı Bağlantılar</h3>
-                    <ul>
-                        <li><a href="index.html" data-translate="nav.home">Ana Sayfa</a></li>
-                        <li><a href="hakkimizda.html" data-translate="nav.about">Hakkımızda</a></li>
-                        <li><a href="cami-insaati.html" data-translate="nav.construction">Cami İnşaatı</a></li>
-                        <li><a href="uyelik.html" data-translate="nav.membership">Üyelik</a></li>
-                        <li><a href="iletisim.html" data-translate="nav.contact">İletişim</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
+
+                <div class="footer-section footer-contact">
                     <h3 data-translate="footer.contact.title">İletişim</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> <span data-translate="footer.contact.address">Dusavikveien
-                            35, 2 etg<br>4007 Stavanger, Norge</span></p>
-                    <p><i class="fas fa-phone"></i> <span data-translate="footer.contact.phone">+47 40144008</span></p>
-                    <p><i class="fas fa-envelope"></i> <span
-                            data-translate="footer.contact.email">leder@mevlanamoske.no</span></p>
+                    <div class="footer-contact-item">
+                        <strong data-translate="footer.contact.phone">Telefon:</strong>
+                        <a href="tel:+4740144008">+47 40 14 40 08</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong data-translate="footer.contact.email">E-posta:</strong>
+                        <span>leder@mevlanamoske.no</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong data-translate="footer.contact.address">Adres:</strong>
+                        <span data-translate="footer.contact.address.text">Økernveien 145, 0580 Stavanger, Norveç</span>
+                    </div>
+                </div>
+
+                <div class="footer-section footer-map">
+                    <h3 data-translate="footer.map.title">Konum</h3>
+                    <div class="footer-map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055.985600021678!2d5.709846899999999!3d58.9819506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463bcaab99b5dc1b%3A0x5a7a44893091b694!2sDusavikveien%2035%2C%204007%20Stavanger%2C%20Norve%C3%A7!5e0!3m2!1str!2str!4v1757772294044!5m2!1str!2str"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p data-translate="footer.copyright">&copy; 2024 Diyanet Mevlana Moske. Tüm hakları saklıdır.</p>
+                <p data-translate="footer.copyright">&copy; 2025 Diyanet Mevlana Moske. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>

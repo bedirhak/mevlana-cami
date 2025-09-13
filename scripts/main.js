@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     setupMobileMenu();
     setupDonationModal(); // Modal fonksiyonunu ekle
+    setupFormDownload(); // PDF form indirme fonksiyonu
     // Diğer fonksiyonları çalıştırmadan önce kontrol et
     if (typeof translations !== 'undefined') {
         initializeLanguage();
@@ -372,3 +373,23 @@ function setupChildrenManagement() {
 document.addEventListener('DOMContentLoaded', function () {
     setupChildrenManagement();
 });
+
+// PDF Form indirme fonksiyonu
+function setupFormDownload() {
+    const downloadBtn = document.getElementById('downloadFormBtn');
+
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', function () {
+            // PDF dosyasını indir
+            const link = document.createElement('a');
+            link.href = 'assets/pdf/registrationForm.pdf';
+            link.download = 'Uyelik_Formu.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // İsteğe bağlı: İndirme başarılı mesajı
+            console.log('Üyelik formu indiriliyor...');
+        });
+    }
+}
