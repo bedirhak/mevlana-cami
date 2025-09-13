@@ -271,3 +271,104 @@ function setupDonationModal() {
         });
     }
 }
+
+// Çocuk bilgileri yönetimi
+function setupChildrenManagement() {
+    const addChildBtn = document.getElementById('addChildBtn');
+    const childrenContainer = document.getElementById('childrenContainer');
+    let childCounter = 0;
+
+    if (!addChildBtn || !childrenContainer) return;
+
+    // Çocuk ekle butonu
+    addChildBtn.addEventListener('click', function () {
+        childCounter++;
+        addChildForm(childCounter);
+    });
+
+    // Çocuk formu oluştur
+    function addChildForm(childNumber) {
+        const childDiv = document.createElement('div');
+        childDiv.className = 'child-form';
+        childDiv.id = `child-${childNumber}`;
+
+        childDiv.innerHTML = `
+            <div class="child-header">
+                <h4 data-translate="membership.form.children.child.title">Çocuk ${childNumber}</h4>
+                <button type="button" class="remove-child-btn" data-child-id="${childNumber}">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="childName${childNumber}" data-translate="membership.form.children.name.label">Çocuğun Adı</label>
+                    <input type="text" id="childName${childNumber}" name="cocuk_${childNumber}_adi" 
+                           data-translate-placeholder="membership.form.children.name.placeholder">
+                    <i class="fas fa-baby form-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="childSurname${childNumber}" data-translate="membership.form.children.surname.label">Çocuğun Soyadı</label>
+                    <input type="text" id="childSurname${childNumber}" name="cocuk_${childNumber}_soyadi" 
+                           data-translate-placeholder="membership.form.children.surname.placeholder">
+                    <i class="fas fa-baby form-icon"></i>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="childBirthDate${childNumber}" data-translate="membership.form.children.birthDate.label">Doğum Tarihi</label>
+                    <input type="date" id="childBirthDate${childNumber}" name="cocuk_${childNumber}_dogum_tarihi">
+                    <i class="fas fa-calendar-alt form-icon"></i>
+                </div>
+                <div class="form-group">
+                    <label for="childGender${childNumber}" data-translate="membership.form.children.gender.label">Cinsiyet</label>
+                    <select id="childGender${childNumber}" name="cocuk_${childNumber}_cinsiyet">
+                        <option value="" data-translate="membership.form.children.gender.select">Seçiniz</option>
+                        <option value="Erkek" data-translate="membership.form.children.gender.male">Erkek</option>
+                        <option value="Kız" data-translate="membership.form.children.gender.female">Kız</option>
+                    </select>
+                    <i class="fas fa-venus-mars form-icon"></i>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="childPersonnummer${childNumber}" data-translate="membership.form.children.personnummer.label">Kişi Numarası</label>
+                    <input type="text" id="childPersonnummer${childNumber}" name="cocuk_${childNumber}_kisi_numarasi" 
+                           pattern="[0-9]{11}" maxlength="11"
+                           data-translate-placeholder="membership.form.children.personnummer.placeholder">
+                    <i class="fas fa-id-card form-icon"></i>
+                </div>
+                <div class="form-group">
+                    <!-- Empty space for layout symmetry -->
+                </div>
+            </div>
+        `;
+
+        childrenContainer.appendChild(childDiv);
+
+        // Remove button için event listener ekle
+        const removeBtn = childDiv.querySelector('.remove-child-btn');
+        if (removeBtn) {
+            removeBtn.addEventListener('click', function () {
+                removeChild(childNumber);
+            });
+        }
+
+        // Yeni eklenen elementlere çeviri uygula
+        if (typeof updatePageTexts === 'function') {
+            updatePageTexts();
+        }
+    }
+
+    // Çocuk sil fonksiyonu (local scope)
+    function removeChild(childNumber) {
+        const childElement = document.getElementById(`child-${childNumber}`);
+        if (childElement) {
+            childElement.remove();
+        }
+    }
+}
+
+// Sayfa yüklendiğinde çocuk yönetimini başlat
+document.addEventListener('DOMContentLoaded', function () {
+    setupChildrenManagement();
+});
