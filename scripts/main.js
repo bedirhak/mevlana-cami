@@ -1,6 +1,7 @@
 // DOM yüklendiğinde çalıştır
 document.addEventListener('DOMContentLoaded', function () {
     setupMobileMenu();
+    setupDonationModal(); // Modal fonksiyonunu ekle
     // Diğer fonksiyonları çalıştırmadan önce kontrol et
     if (typeof translations !== 'undefined') {
         initializeLanguage();
@@ -115,21 +116,21 @@ function getTranslation(key) {
 }
 
 // Form gönderme işlemi (isteğe bağlı)
-document.addEventListener('submit', function (e) {
-    const form = e.target;
-    if (form.tagName === 'FORM') {
-        e.preventDefault();
+// document.addEventListener('submit', function (e) {
+//     const form = e.target;
+//     if (form.tagName === 'FORM') {
+//         e.preventDefault();
 
-        // Form verilerini al
-        const formData = new FormData(form);
+//         // Form verilerini al
+//         const formData = new FormData(form);
 
-        // Basit bir başarı mesajı göster
-        alert(getTranslation('contact.form.success') || 'Mesajınız başarıyla gönderildi!');
+//         // Basit bir başarı mesajı göster
+//         alert(getTranslation('contact.form.success') || 'Mesajınız başarıyla gönderildi!');
 
-        // Formu temizle
-        form.reset();
-    }
-});
+//         // Formu temizle
+//         form.reset();
+//     }
+// });
 
 // // Sayfa yüklendiğinde aktif sayfa linkini işaretle
 // function setActiveNavLink() {
@@ -185,6 +186,43 @@ function setupMobileMenu() {
                 navMenu.classList.remove('open');
                 mobileMenuIcon.classList.remove('fa-times');
                 mobileMenuIcon.classList.add('fa-bars');
+            }
+        });
+    }
+}
+
+// Bağış şartları modal fonksiyonu
+function setupDonationModal() {
+    const modal = document.getElementById('donation-terms-modal');
+    const openBtn = document.getElementById('open-donation-terms');
+    const closeBtn = document.querySelector('.close-button');
+
+    if (modal && openBtn && closeBtn) {
+        // Modal'ı aç
+        openBtn.addEventListener('click', function () {
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Arka plan scroll'unu engelle
+        });
+
+        // Modal'ı kapat (X butonu)
+        closeBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Scroll'u geri aç
+        });
+
+        // Modal dışına tıklanınca kapat
+        window.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Scroll'u geri aç
+            }
+        });
+
+        // ESC tuşu ile kapat
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Scroll'u geri aç
             }
         });
     }

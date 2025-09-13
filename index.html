@@ -27,6 +27,8 @@
                 <ul class="nav-menu">
                     <li><a href="index.html" data-translate="nav.home">Ana Sayfa</a></li>
                     <li><a href="hakkimizda.html" data-translate="nav.about">Hakkımızda</a></li>
+                    <li><a href="cami-insaati.html" data-translate="nav.construction">Cami İnşaatı</a></li>
+                    <li><a href="uyelik.html" data-translate="nav.membership">Üyelik</a></li>
                     <li><a href="namaz-vakitleri.html" data-translate="nav.prayer">Namaz Vakitleri</a></li>
                     <li><a href="iletisim.html" data-translate="nav.contact">İletişim</a></li>
                 </ul>
@@ -46,7 +48,7 @@
         <section class="mevlana-banner">
             <div class="banner-container">
                 <div class="banner-image">
-                    <img src="assets/images/banner.jpg" alt="Mevlana Banner" class="banner-img">
+                    <img src="assets/images/banner-cami.jpg" alt="Mevlana Banner" class="banner-img">
                 </div>
                 <div class="banner-content">
                     <div class="banner-text">
@@ -61,6 +63,28 @@
 
         <section class="donation-terms">
             <div class="container">
+                <h2 data-translate="donation.terms.title">Bağış Şartları</h2>
+                <div class="donation-terms-content">
+                    <p data-translate="donation.terms.short.description">Camimize yapacağınız bağışlarla ilgili
+                        önemli
+                        bilgiler ve şartlar hakkında detaylı bilgi almak için aşağıdaki butona tıklayınız.</p>
+                    <div class="donation-terms-qr">
+                        <img src="assets/images/vippsQr.png" alt="Vipps QR Code" class="vipps-qr-image">
+                        <p class="qr-description" data-translate="donation.qr.description">QR kodu tarayarak hızlıca
+                            bağış yapabilirsiniz</p>
+                    </div>
+                    <button id="open-donation-terms" class="donation-terms-btn"
+                        data-translate="donation.terms.button">Bağış
+                        Şartlarını Görüntüle</button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Terms Modal -->
+        <div id="donation-terms-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
                 <h2 data-translate="donation.terms.title">Bağış Şartları</h2>
                 <div class="terms-content">
                     <p data-translate="donation.terms.intro">Bu şartlar, bağışçılardan camiye yapılan bağışları
@@ -153,7 +177,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="vipps-donation">
             <div class="container">
@@ -165,7 +189,13 @@
                 <div class="vipps-content">
                     <div class="vipps-info">
                         <div class="vipps-logo-section">
-                            <div class="vipps-icon">💳</div>
+                            <div class="vipps-icon">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <rect width="60" height="60" rx="15" fill="#fff" />
+                                    <path d="M15 20h8l-6 20h-8l6-20zm12 0h8l6 20h-8l-6-20zm12 0h8v20h-8V20z"
+                                        fill="#FF5B24" />
+                                </svg>
+                            </div>
                             <h3 data-translate="vipps.quick.title">Hızlı ve Güvenli</h3>
                         </div>
 
@@ -203,6 +233,11 @@
                                         Moske</div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="vipps-qr-section">
+                            <img src="assets/images/vippsQr.png" alt="Vipps QR Code" class="vipps-qr-main">
+                            <p class="vipps-qr-text" data-translate="vipps.qr.description">QR kodu tarayın</p>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="page.membership.title">Üyelik - Diyanet Mevlana Moske</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <img src="assets/images/logo.png" alt="Logo" class="logo">
+                <h1 class="site-title" data-translate="header.title">Diyanet Mevlana Moske</h1>
+            </div>
+            <nav class="header-nav">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="tr">TR</button>
+                    <button class="lang-btn" data-lang="no">NO</button>
+                </div>
+                <i class="fa-solid fa-bars mobile-menu-icon"></i>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav.home">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html" data-translate="nav.about">Hakkımızda</a></li>
+                    <li><a href="cami-insaati.html" data-translate="nav.construction">Cami İnşaatı</a></li>
+                    <li><a href="uyelik.html" data-translate="nav.membership">Üyelik</a></li>
+                    <li><a href="namaz-vakitleri.html" data-translate="nav.prayer">Namaz Vakitleri</a></li>
+                    <li><a href="iletisim.html" data-translate="nav.contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header membership-header">
+            <div class="container">
+                <h1 data-translate="membership.title">🤝 Cami Üyeliği</h1>
+                <p data-translate="membership.subtitle">Camimize üye olun ve toplumumuzun bir parçası olun</p>
+            </div>
+        </section>
+
+        <section class="membership-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2 data-translate="membership.intro.title">Camimize Hoş Geldiniz</h2>
+                        <p data-translate="membership.intro.text">
+                            Diyanet Mevlana Moske ailesi olarak sizleri aramızda görmekten büyük mutluluk duyuyoruz.
+                            Üye olarak camimizin faaliyetlerinden haberdar olabilir, etkinliklerimize katılabilir
+                            ve toplumumuzun güçlü bağlarını daha da sağlamlaştırabilirsiniz.
+                        </p>
+
+                    </div>
+                    <div class="intro-visual">
+                        <div class="membership-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="form-header">
+                        <h2 data-translate="membership.form.title">📝 Üyelik Başvuru Formu</h2>
+                        <p data-translate="membership.form.description">
+                            Lütfen aşağıdaki bilgileri eksiksiz olarak doldurun.
+                            Kişisel bilgileriniz gizli tutulacak ve sadece cami faaliyetleri için kullanılacaktır.
+                        </p>
+                    </div>
+
+                    <form class="membership-form" id="membershipForm"
+                        action="https://formsubmit.co/efendicetintas@hotmail.com" method="POST">
+                        <!-- FormSubmit hidden fields -->
+                        <input type="hidden" name="_subject" value="Üyelik Formu - Diyanet Mevlana Moske">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://mevlanastavanger.no/uyelik.html?success=true">
+                        <input type="hidden" name="_captcha" value="true">
+
+                        <div class="form-group radio-group">
+                            <label class="radio-group-label" data-translate="membership.form.type.label">İşlem
+                                Türü</label>
+                            <div class="radio-options">
+                                <label class="radio-label">
+                                    <input type="radio" name="islem_turu" value="Yeni Üyelik" checked>
+                                    <span class="radio-checkmark"></span>
+                                    <span data-translate="membership.form.type.new">Yeni Üyelik</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="islem_turu" value="Üyelik İptal">
+                                    <span class="radio-checkmark"></span>
+                                    <span data-translate="membership.form.type.cancel">Üyelik İptal</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" data-translate="membership.form.firstName.label">Ad</label>
+                                <input type="text" id="firstName" name="ad" required
+                                    data-translate-placeholder="membership.form.firstName.placeholder">
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" data-translate="membership.form.lastName.label">Soyad</label>
+                                <input type="text" id="lastName" name="soyad" required
+                                    data-translate-placeholder="membership.form.lastName.placeholder">
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" data-translate="membership.form.email.label">E-posta</label>
+                                <input type="email" id="email" name="email" required
+                                    data-translate-placeholder="membership.form.email.placeholder">
+                                <i class="fas fa-envelope form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-translate="membership.form.phone.label">Telefon</label>
+                                <input type="tel" id="phone" name="telefon" required
+                                    data-translate-placeholder="membership.form.phone.placeholder">
+                                <i class="fas fa-phone form-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address" data-translate="membership.form.address.label">Adres</label>
+                            <textarea id="address" name="adres" rows="3" required
+                                data-translate-placeholder="membership.form.address.placeholder"></textarea>
+                            <i class="fas fa-map-marker-alt form-icon"></i>
+                        </div>
+
+
+                        <!-- 
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="kvkk_onay" required value="Kabul edildi">
+                                <span class="checkmark"></span>
+                                <span data-translate="membership.form.privacy">Kişisel verilerimin işlenmesini kabul
+                                    ediyorum</span>
+                            </label>
+                        </div> -->
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span id="submitBtnText" data-translate="membership.form.submit.new">Başvuru Gönder</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership-contact">
+            <div class="container">
+                <div class="contact-info">
+                    <h2 data-translate="membership.contact.title">📞 İletişim</h2>
+                    <p data-translate="membership.contact.description">
+                        Üyelikle ilgili sorularınız için bizimle iletişime geçebilirsiniz.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="membership.contact.phone">+47 40144008</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span data-translate="membership.contact.email">leder@mevlanamoske.no</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-translate="membership.contact.address">Dusavikveien 35, 2 etg, 4007
+                                Stavanger</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="footer.about.title">Diyanet Mevlana Moske</h3>
+                    <p data-translate="footer.about.text">Norveç'te yaşayan Müslüman topluma hizmet veren camimiz,
+                        ibadet
+                        ve eğitim faaliyetleriyle toplumumuza katkıda bulunmaktadır.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer.quick.title">Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="index.html" data-translate="nav.home">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html" data-translate="nav.about">Hakkımızda</a></li>
+                        <li><a href="cami-insaati.html" data-translate="nav.construction">Cami İnşaatı</a></li>
+                        <li><a href="uyelik.html" data-translate="nav.membership">Üyelik</a></li>
+                        <li><a href="iletisim.html" data-translate="nav.contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer.contact.title">İletişim</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-translate="footer.contact.address">Dusavikveien
+                            35, 2 etg<br>4007 Stavanger, Norge</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-translate="footer.contact.phone">+47 40144008</span></p>
+                    <p><i class="fas fa-envelope"></i> <span
+                            data-translate="footer.contact.email">leder@mevlanamoske.no</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 Diyanet Mevlana Moske. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/config.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        // Check for success parameter on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('success') === 'true') {
+                showSuccessMessage('submitted');
+                // Remove the success parameter from URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+            updateSubmitButton('new');
+        });
+
+        // Radio button change handler
+        document.querySelectorAll('input[name="islem_turu"]').forEach(radio => {
+            radio.addEventListener('change', function () {
+                const type = this.value === 'Yeni Üyelik' ? 'new' : 'cancel';
+                updateSubmitButton(type);
+                updateFormSubject(this.value);
+            });
+        });
+
+        // Update form subject based on selection
+        function updateFormSubject(type) {
+            const subjectField = document.querySelector('input[name="_subject"]');
+            if (type === 'Yeni Üyelik') {
+                subjectField.value = 'Yeni Üyelik Başvurusu - Diyanet Mevlana Moske';
+            } else {
+                subjectField.value = 'Üyelik İptal Talebi - Diyanet Mevlana Moske';
+            }
+        }
+
+        // Update submit button text based on selection
+        function updateSubmitButton(type) {
+            const submitBtnText = document.getElementById('submitBtnText');
+            const submitBtn = document.getElementById('submitBtn');
+
+            if (type === 'new') {
+                submitBtnText.textContent = translations[currentLanguage]['membership.form.submit.new'] || 'Başvuru Gönder';
+                submitBtn.querySelector('i').className = 'fas fa-paper-plane';
+            } else if (type === 'cancel') {
+                submitBtnText.textContent = translations[currentLanguage]['membership.form.submit.cancel'] || 'Üyelik İptal';
+                submitBtn.querySelector('i').className = 'fas fa-times-circle';
+            }
+        }
+
+        // Form submission handler
+        // document.getElementById('membershipForm').addEventListener('submit', function (e) {
+        //     // Show loading state
+        //     const submitBtn = document.getElementById('submitBtn');
+        //     const originalContent = submitBtn.innerHTML;
+        //     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Gönderiliyor...</span>';
+        //     submitBtn.disabled = true;
+
+        //     // Let FormSubmit handle the actual submission
+        //     // The form will redirect to the success page automatically
+
+        //     // If there's an error, restore the button (this won't run if successful)
+        //     setTimeout(() => {
+        //         submitBtn.innerHTML = originalContent;
+        //         submitBtn.disabled = false;
+        //     }, 5000);
+        // });
+
+        function showSuccessMessage(type) {
+            let successMessage;
+            if (type === 'submitted') {
+                successMessage = translations[currentLanguage]['membership.form.success.submitted'] ||
+                    'Formunuz başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.';
+            }
+
+            // Create a nice success notification
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #28a745, #20c997);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+                z-index: 10000;
+                font-weight: 500;
+                animation: slideIn 0.3s ease-out;
+            `;
+            notification.innerHTML = `
+                <i class="fas fa-check-circle" style="margin-right: 0.5rem;"></i>
+                ${successMessage}
+            `;
+
+            document.body.appendChild(notification);
+
+            // Remove notification after 5 seconds
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease-out';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 5000);
+        }
+
+        // Add animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
