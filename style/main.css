@@ -2936,7 +2936,7 @@ i.mobile-menu-icon {
 .donation-qr {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
 }
@@ -2958,6 +2958,75 @@ i.mobile-menu-icon {
     margin-top: 1rem;
     font-size: 1rem;
     opacity: 0.9;
+}
+
+/* Bank Details */
+.bank-details {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.bank-details h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+    text-align: center;
+}
+
+.bank-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bank-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+}
+
+.bank-label {
+    font-weight: 600;
+    color: #ffd700;
+    font-size: 1rem;
+}
+
+.bank-value {
+    font-weight: 700;
+    color: white;
+    font-size: 1.1rem;
+    text-align: right;
+    font-family: monospace;
+}
+
+.bank-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.contact-info {
+    background-color: #1a3e20;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+}
+
+.contact-info i {
+    color: #ffd700;
+    width: 20px;
 }
 
 /* Construction Timeline */
@@ -3874,5 +3943,50 @@ i.mobile-menu-icon {
 
     .submit-btn {
         width: 100%;
+    }
+
+    /* Bank details mobile responsiveness */
+    .donation-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .bank-details {
+        margin: 2rem 0;
+        padding: 1.5rem;
+    }
+
+    .bank-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .bank-info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .bank-value {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .bank-contact {
+        gap: 1rem;
+    }
+
+    .contact-info {
+        font-size: 0.9rem;
+    }
+
+    .donation-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .donation-btn {
+        width: 100%;
+        justify-content: center;
     }
 }

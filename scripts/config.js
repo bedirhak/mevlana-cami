@@ -188,6 +188,11 @@ const translations = {
         "construction.donation.vipps.btn": "📱 Vipps ile Bağış Yap",
         "construction.donation.contact.btn": "📞 İletişime Geç",
         "construction.donation.qr.text": "QR kodu tarayarak hızlıca bağış yapın",
+        "construction.donation.bank.details.title": "💳 Banka Havalesi Bilgileri",
+        "construction.donation.bank.name": "Banka:",
+        "construction.donation.bank.account": "Konto nr:",
+        "construction.donation.bank.description": "Açıklama:",
+        "construction.donation.bank.contact": "İletişim: +47 40 14 40 08",
 
         "construction.timeline.title": "📅 Proje Zaman Çizelgesi",
         "construction.timeline.planning.title": "Planlama Aşaması",
@@ -477,6 +482,11 @@ const translations = {
         "construction.donation.vipps.btn": "📱 Doner med Vipps",
         "construction.donation.contact.btn": "📞 Ta Kontakt",
         "construction.donation.qr.text": "Skann QR-koden for rask donasjon",
+        "construction.donation.bank.details.title": "💳 Bankoverføring Detaljer",
+        "construction.donation.bank.name": "Bank:",
+        "construction.donation.bank.account": "Konto nr:",
+        "construction.donation.bank.description": "Beskrivelse:",
+        "construction.donation.bank.contact": "Kontakt: +47 40 14 40 08",
 
         "construction.timeline.title": "📅 Prosjekt Tidslinje",
         "construction.timeline.planning.title": "Planleggingsfase",
