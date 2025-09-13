@@ -1,8 +1,12 @@
 // DOM yüklendiğinde çalıştır
 document.addEventListener('DOMContentLoaded', function () {
-    initializeLanguage();
-    setupLanguageSwitcher();
-    updatePageTexts();
+    setupMobileMenu();
+    // Diğer fonksiyonları çalıştırmadan önce kontrol et
+    if (typeof translations !== 'undefined') {
+        initializeLanguage();
+        setupLanguageSwitcher();
+        updatePageTexts();
+    }
 });
 
 // Dil başlatma
@@ -127,20 +131,61 @@ document.addEventListener('submit', function (e) {
     }
 });
 
-// Sayfa yüklendiğinde aktif sayfa linkini işaretle
-function setActiveNavLink() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-menu a');
+// // Sayfa yüklendiğinde aktif sayfa linkini işaretle
+// function setActiveNavLink() {
+//     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+//     const navLinks = document.querySelectorAll('.nav-menu a');
 
-    navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
+//     navLinks.forEach(link => {
+//         const href = link.getAttribute('href');
+//         if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+//             link.classList.add('active');
+//         } else {
+//             link.classList.remove('active');
+//         }
+//     });
+// }
+
+// // Sayfa yüklendiğinde aktif linki ayarla
+// document.addEventListener('DOMContentLoaded', setActiveNavLink);
+
+// Mobile Menu Fonksiyonu
+function setupMobileMenu() {
+    const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (mobileMenuIcon && navMenu) {
+        // Menu icon'a tıklanınca menüyü aç/kapat
+        mobileMenuIcon.addEventListener('click', function (e) {
+            e.stopPropagation();
+            navMenu.classList.toggle('open');
+
+            // Icon'u değiştir
+            if (navMenu.classList.contains('open')) {
+                mobileMenuIcon.classList.remove('fa-bars');
+                mobileMenuIcon.classList.add('fa-times');
+            } else {
+                mobileMenuIcon.classList.remove('fa-times');
+                mobileMenuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Menü linklerine tıklanınca menüyü kapat
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function () {
+                navMenu.classList.remove('open');
+                mobileMenuIcon.classList.remove('fa-times');
+                mobileMenuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Menü dışına tıklanınca menüyü kapat
+        document.addEventListener('click', function (e) {
+            if (!navMenu.contains(e.target) && !mobileMenuIcon.contains(e.target)) {
+                navMenu.classList.remove('open');
+                mobileMenuIcon.classList.remove('fa-times');
+                mobileMenuIcon.classList.add('fa-bars');
+            }
+        });
+    }
 }
-
-// Sayfa yüklendiğinde aktif linki ayarla
-document.addEventListener('DOMContentLoaded', setActiveNavLink);

@@ -8,11 +8,13 @@ const translations = {
         "nav.home": "Ana Sayfa",
         "nav.about": "Hakkımızda",
         "nav.contact": "İletişim",
+        "nav.prayer": "Namaz Vakitleri",
 
         // Page Titles
         "page.home.title": "Diyanet Mevlana Moske",
         "page.about.title": "Hakkımızda - Diyanet Mevlana Moske",
         "page.contact.title": "İletişim - Diyanet Mevlana Moske",
+        "page.prayer.title": "Namaz Vakitleri - Diyanet Mevlana Moske",
 
         // Home Page
         "home.welcome": "Hoş Geldiniz",
@@ -108,10 +110,40 @@ const translations = {
 
         "donation.terms.acceptance": "Bir bağış yaparak, bu şartları okuduğunuzu ve anladığınızı ve bunları tamamen kabul ettiğinizi onaylarsınız.",
 
+        // Prayer Times
+        "prayer.page.title": "Namaz Vakitleri",
+        "prayer.page.subtitle": "Stavanger - Norveç için günlük namaz vakitleri",
+        "prayer.location": "Stavanger, Norveç",
+        "prayer.today.title": "Bugünün Namaz Vakitleri",
+        "prayer.fajr": "İmsak",
+        "prayer.sunrise": "Güneş",
+        "prayer.dhuhr": "Öğle",
+        "prayer.asr": "İkindi",
+        "prayer.maghrib": "Akşam",
+        "prayer.isha": "Yatsı",
+        "prayer.next.title": "Sıradaki Namaz",
+        "prayer.weekly.title": "Haftalık Namaz Vakitleri",
+        "prayer.table.date": "Tarih",
+        "prayer.table.fajr": "İmsak",
+        "prayer.table.sunrise": "Güneş",
+        "prayer.table.dhuhr": "Öğle",
+        "prayer.table.asr": "İkindi",
+        "prayer.table.maghrib": "Akşam",
+        "prayer.table.isha": "Yatsı",
+        "prayer.notes.title": "Önemli Notlar",
+        "prayer.notes.calculation": "Vakitler Diyanet İşleri hesaplama yöntemine göre belirlenmiştir.",
+        "prayer.notes.location": "Stavanger koordinatları: 58.9937° K, 5.7275° D",
+        "prayer.notes.accuracy": "Vakitler yaklaşık olup, ±2 dakika tolerans gösterebilir.",
+        "prayer.notes.update": "Vakitler otomatik olarak güncellenmektedir.",
+
         // Footer
         "footer.welcome": "Diyanet Mevlana Moske'ye Hoş Geldiniz",
-        "footer.description": "Oslo'da bulunan Diyanet Mevlana Moske olarak Müslüman toplumumuza hizmet etmekten gurur duyuyoruz.",
+        "footer.description": "Stavanger'e bulunan Diyanet Mevlana Moske olarak Müslüman toplumumuza hizmet etmekten gurur duyuyoruz.",
         "footer.org.number": "Org.nr: 971 490 942",
+        "footer.quick.links": "Hızlı Linkler",
+        "footer.support": "Destek",
+        "footer.vipps.donation": "Vipps ile Bağış: 95074",
+        "footer.mosque.name": "Diyanet Mevlana Moske",
         "footer.contact.title": "İletişim",
         "footer.contact.phone": "Telefon:",
         "footer.contact.email": "E-posta:",
@@ -129,11 +161,13 @@ const translations = {
         "nav.home": "Hjem",
         "nav.about": "Om oss",
         "nav.contact": "Kontakt",
+        "nav.prayer": "Bønnetider",
 
         // Page Titles
         "page.home.title": "Diyanet Mevlana Moske",
         "page.about.title": "Om oss - Diyanet Mevlana Moske",
         "page.contact.title": "Kontakt - Diyanet Mevlana Moske",
+        "page.prayer.title": "Bønnetider - Diyanet Mevlana Moske",
 
         // Home Page
         "home.welcome": "Velkommen",
@@ -229,10 +263,40 @@ const translations = {
 
         "donation.terms.acceptance": "Ved å gi en gave bekrefter du at du har lest og forstått disse vilkårene, og at du godtar dem i sin helhet.",
 
+        // Prayer Times
+        "prayer.page.title": "Bønnetider",
+        "prayer.page.subtitle": "Daglige bønnetider for Stavanger - Norge",
+        "prayer.location": "Stavanger, Norge",
+        "prayer.today.title": "Dagens Bønnetider",
+        "prayer.fajr": "Fajr",
+        "prayer.sunrise": "Soloppgang",
+        "prayer.dhuhr": "Dhuhr",
+        "prayer.asr": "Asr",
+        "prayer.maghrib": "Maghrib",
+        "prayer.isha": "Isha",
+        "prayer.next.title": "Neste Bønn",
+        "prayer.weekly.title": "Ukentlige Bønnetider",
+        "prayer.table.date": "Dato",
+        "prayer.table.fajr": "Fajr",
+        "prayer.table.sunrise": "Soloppgang",
+        "prayer.table.dhuhr": "Dhuhr",
+        "prayer.table.asr": "Asr",
+        "prayer.table.maghrib": "Maghrib",
+        "prayer.table.isha": "Isha",
+        "prayer.notes.title": "Viktige Merknader",
+        "prayer.notes.calculation": "Tidene er beregnet i henhold til Diyanet kalkulasjonsmetode.",
+        "prayer.notes.location": "Stavanger koordinater: 58.9937° N, 5.7275° Ø",
+        "prayer.notes.accuracy": "Tidene er omtrentlige og kan ha ±2 minutters toleranse.",
+        "prayer.notes.update": "Tidene oppdateres automatisk.",
+
         // Footer
         "footer.welcome": "Velkommen til Diyanet Mevlana Moske",
-        "footer.description": "Som Diyanet Mevlana Moske i Oslo er vi stolte av å tjene vårt muslimske samfunn.",
+        "footer.description": "Som Diyanet Mevlana Moske i Stavanger er vi stolte av å tjene vårt muslimske samfunn.",
         "footer.org.number": "Org.nr: 971 490 942",
+        "footer.quick.links": "Hurtigkoblinger",
+        "footer.support": "Støtte",
+        "footer.vipps.donation": "Vipps donasjon: 95074",
+        "footer.mosque.name": "Diyanet Mevlana Moske",
         "footer.contact.title": "Kontakt",
         "footer.contact.phone": "Telefon:",
         "footer.contact.email": "E-post:",

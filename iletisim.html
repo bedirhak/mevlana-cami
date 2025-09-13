@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-translate="page.contact.title">İletişim - Diyanet Mevlana Moske</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style/main.css">
 </head>
 
@@ -20,9 +21,11 @@
                     <button class="lang-btn active" data-lang="tr">TR</button>
                     <button class="lang-btn" data-lang="no">NO</button>
                 </div>
+                <i class="fa-solid fa-bars mobile-menu-icon"></i>
                 <ul class="nav-menu">
                     <li><a href="index.html" data-translate="nav.home">Ana Sayfa</a></li>
                     <li><a href="hakkimizda.html" data-translate="nav.about">Hakkımızda</a></li>
+                    <li><a href="namaz-vakitleri.html" data-translate="nav.prayer">Namaz Vakitleri</a></li>
                     <li><a href="iletisim.html" data-translate="nav.contact" class="active">İletişim</a></li>
                 </ul>
             </nav>
@@ -58,22 +61,25 @@
 
                 </div>
 
-
-
                 <div class="contact-form">
                     <h3 data-translate="contact.form.title">Bize Ulaşın</h3>
-                    <form action="https://formsubmit.co/leder@mevlanamoske.no" method="POST">
+                    <form action="https://formsubmit.co/efendicetintas@hotmail.com" method="POST">
+                        <!-- FormSubmit konfigürasyonları -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+                        <input type="hidden" name="_subject" value="Mevlana Moske İletişim Formu">
+
                         <div class="form-group">
                             <label data-translate="contact.form.name">Adınız</label>
-                            <input type="text" required>
+                            <input type="text" name="name" required>
                         </div>
                         <div class="form-group">
                             <label data-translate="contact.form.email">E-posta</label>
-                            <input type="email" required>
+                            <input type="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label data-translate="contact.form.message">Mesajınız</label>
-                            <textarea required></textarea>
+                            <textarea name="message" required></textarea>
                         </div>
                         <button type="submit" data-translate="contact.form.submit">Gönder</button>
                     </form>
@@ -99,7 +105,7 @@
                         <h3 data-translate="footer.welcome">Diyanet Mevlana Moske'ye Hoş Geldiniz</h3>
                     </div>
                     <p data-translate="footer.description">
-                        Oslo'da bulunan Diyanet Mevlana Moske olarak Müslüman toplumumuza hizmet etmekten gurur
+                        Stavanger'de bulunan Diyanet Mevlana Moske olarak Müslüman toplumumuza hizmet etmekten gurur
                         duyuyoruz.
                     </p>
                     <p data-translate="footer.org.number">Org.nr: 971 490 942</p>
@@ -117,7 +123,7 @@
                     </div>
                     <div class="footer-contact-item">
                         <strong data-translate="footer.contact.address">Adres:</strong>
-                        <span data-translate="footer.contact.address.text">Økernveien 145, 0580 Oslo, Norveç</span>
+                        <span data-translate="footer.contact.address.text">Økernveien 145, 0580 Stavanger, Norveç</span>
                     </div>
                 </div>
 
@@ -125,10 +131,9 @@
                     <h3 data-translate="footer.map.title">Konum</h3>
                     <div class="footer-map-container">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.123456789!2d10.7941!3d59.9475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e7b7b7b7b7b%3A0x1234567890abcdef!2s%C3%98kernveien%20145%2C%200580%20Oslo!5e0!3m2!1str!2sno!4v1234567890123!5m2!1str!2sno"
-                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055.985600021678!2d5.709846899999999!3d58.9819506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463bcaab99b5dc1b%3A0x5a7a44893091b694!2sDusavikveien%2035%2C%204007%20Stavanger%2C%20Norve%C3%A7!5e0!3m2!1str!2str!4v1757772294044!5m2!1str!2str"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -140,7 +145,7 @@
     </footer>
 
     <script src="scripts/config.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 
 </html>

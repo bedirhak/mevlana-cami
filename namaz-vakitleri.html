@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="page.prayer.title">Namaz Vakitleri - Diyanet Mevlana Moske</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <img src="assets/images/logo.png" alt="Logo" class="logo">
+                <h1 class="site-title" data-translate="header.title">Diyanet Mevlana Moske</h1>
+            </div>
+            <nav class="header-nav">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="tr">TR</button>
+                    <button class="lang-btn" data-lang="no">NO</button>
+                </div>
+                <i class="fa-solid fa-bars mobile-menu-icon"></i>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-translate="nav.home">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html" data-translate="nav.about">Hakkımızda</a></li>
+                    <li><a href="namaz-vakitleri.html" data-translate="nav.prayer" class="active">Namaz Vakitleri</a>
+                    </li>
+                    <li><a href="iletisim.html" data-translate="nav.contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 data-translate="prayer.page.title">Namaz Vakitleri</h1>
+                <p data-translate="prayer.page.subtitle">Stavanger - Norveç için günlük namaz vakitleri</p>
+            </div>
+        </section>
+
+        <section class="prayer-times-section">
+            <div class="container">
+                <div class="prayer-info">
+                    <div class="current-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="date-info">
+                            <span class="hijri-date" id="hijriDate"></span>
+                            <span class="gregorian-date" id="gregorianDate"></span>
+                        </div>
+                    </div>
+
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-translate="prayer.location">Stavanger, Norveç</span>
+                    </div>
+                </div>
+
+                <div class="prayer-times-container">
+                    <h2 data-translate="prayer.today.title">Bugünün Namaz Vakitleri</h2>
+
+                    <div class="prayer-times-grid">
+                        <div class="prayer-time-card">
+                            <div class="prayer-name">
+                                <i class="fas fa-sun"></i>
+                                <span data-translate="prayer.fajr">İmsak</span>
+                            </div>
+                            <div class="prayer-time" id="fajrTime">--:--</div>
+                        </div>
+
+                        <div class="prayer-time-card">
+                            <div class="prayer-name">
+                                <i class="fas fa-sun-rise"></i>
+                                <span data-translate="prayer.sunrise">Güneş</span>
+                            </div>
+                            <div class="prayer-time" id="sunriseTime">--:--</div>
+                        </div>
+
+                        <div class="prayer-time-card">
+                            <div class="prayer-name">
+                                <i class="fas fa-sun"></i>
+                                <span data-translate="prayer.dhuhr">Öğle</span>
+                            </div>
+                            <div class="prayer-time" id="dhuhrTime">--:--</div>
+                        </div>
+
+                        <div class="prayer-time-card">
+                            <div class="prayer-name">
+                                <i class="fas fa-sun-set"></i>
+                                <span data-translate="prayer.asr">İkindi</span>
+                            </div>
+                            <div class="prayer-time" id="asrTime">--:--</div>
+                        </div>
+
+                        <div class="prayer-time-card">
+                            <div class="prayer-name">
+                                <i class="fas fa-moon"></i>
+                                <span data-translate="prayer.maghrib">Akşam</span>
+                            </div>
+                            <div class="prayer-time" id="maghribTime">--:--</div>
+                        </div>
+
+                        <div class="prayer-time-card">
+                            <div class="prayer-name">
+                                <i class="fas fa-star"></i>
+                                <span data-translate="prayer.isha">Yatsı</span>
+                            </div>
+                            <div class="prayer-time" id="ishaTime">--:--</div>
+                        </div>
+                    </div>
+
+                    <div class="next-prayer-info">
+                        <div class="next-prayer-card">
+                            <h3 data-translate="prayer.next.title">Sıradaki Namaz</h3>
+                            <div class="next-prayer-details">
+                                <span class="next-prayer-name" id="nextPrayerName">--</span>
+                                <span class="next-prayer-time" id="nextPrayerTime">--:--</span>
+                                <div class="countdown" id="countdown">--:--:--</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weekly-prayer-times">
+                    <h2 data-translate="prayer.weekly.title">Haftalık Namaz Vakitleri</h2>
+                    <div class="table-responsive">
+                        <table class="prayer-schedule-table">
+                            <thead>
+                                <tr>
+                                    <th data-translate="prayer.table.date">Tarih</th>
+                                    <th data-translate="prayer.table.fajr">İmsak</th>
+                                    <th data-translate="prayer.table.sunrise">Güneş</th>
+                                    <th data-translate="prayer.table.dhuhr">Öğle</th>
+                                    <th data-translate="prayer.table.asr">İkindi</th>
+                                    <th data-translate="prayer.table.maghrib">Akşam</th>
+                                    <th data-translate="prayer.table.isha">Yatsı</th>
+                                </tr>
+                            </thead>
+                            <tbody id="weeklySchedule">
+                                <!-- Weekly prayer times will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="prayer-notes">
+                    <div class="note-card">
+                        <h3 data-translate="prayer.notes.title">Önemli Notlar</h3>
+                        <ul>
+                            <li data-translate="prayer.notes.calculation">Vakitler Diyanet İşleri hesaplama yöntemine
+                                göre belirlenmiştir.</li>
+                            <li data-translate="prayer.notes.location">Stavanger koordinatları: 59.9139° K, 10.7522° D
+                            </li>
+                            <li data-translate="prayer.notes.accuracy">Vakitler yaklaşık olup, ±2 dakika tolerans
+                                gösterebilir.</li>
+                            <li data-translate="prayer.notes.update">Vakitler otomatik olarak güncellenmektedir.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Diyanet Mevlana Moske">
+                        <h3 data-translate="footer.welcome">Diyanet Mevlana Moske'ye Hoş Geldiniz</h3>
+                    </div>
+                    <p data-translate="footer.description">
+                        Stavanger'de bulunan Diyanet Mevlana Moske olarak Müslüman toplumumuza hizmet etmekten gurur
+                        duyuyoruz.
+                    </p>
+                    <p data-translate="footer.org.number">Org.nr: 971 490 942</p>
+                </div>
+
+                <div class="footer-section footer-contact">
+                    <h3 data-translate="footer.contact.title">İletişim</h3>
+                    <div class="footer-contact-item">
+                        <strong data-translate="footer.contact.phone">Telefon:</strong>
+                        <a href="tel:+4740144008">+47 40 14 40 08</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong data-translate="footer.contact.email">E-posta:</strong>
+                        <span>leder@mevlanamoske.no</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong data-translate="footer.contact.address">Adres:</strong>
+                        <span data-translate="footer.contact.address.text">Økernveien 145, 0580 Stavanger, Norveç</span>
+                    </div>
+                </div>
+
+                <div class="footer-section footer-map">
+                    <h3 data-translate="footer.map.title">Konum</h3>
+                    <div class="footer-map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2055.985600021678!2d5.709846899999999!3d58.9819506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463bcaab99b5dc1b%3A0x5a7a44893091b694!2sDusavikveien%2035%2C%204007%20Stavanger%2C%20Norve%C3%A7!5e0!3m2!1str!2str!4v1757772294044!5m2!1str!2str"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2025 Diyanet Mevlana Moske. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/prayer-times.js"></script>
+</body>
+
+</html>
