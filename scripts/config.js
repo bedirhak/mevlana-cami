@@ -9,6 +9,7 @@ const translations = {
         "nav.about": "Hakkımızda",
         "nav.construction": "Cami İnşaatı",
         "nav.membership": "Üyelik",
+        "nav.hac": "Hac & Umre",
         "nav.contact": "İletişim",
         "nav.prayer": "Namaz Vakitleri",
 
@@ -240,11 +241,69 @@ const translations = {
         "nav.education.dershane": "Dershane",
         "nav.education.norwegian": "Norveççe Dersleri",
         "nav.education.quran": "Kuran Kursu",
+        "nav.activities": "Aktiviteler",
+        "nav.funeral": "Cenaze Formu",
+        "nav.funeral.fund": "Cenaze Fonu",
 
         // Page Titles
         "page.dershane.title": "Dershane - Diyanet Mevlana Moske",
         "page.norwegian.title": "Norveççe Dersleri - Diyanet Mevlana Moske",
         "page.quran.title": "Kuran Kursu - Diyanet Mevlana Moske",
+        "page.activities.title": "Aktiviteler - Diyanet Mevlana Moske",
+
+        // Activities Page
+        "activities.title": "🌟 Camii Aktiviteleri",
+        "activities.subtitle": "Toplumumuzun manevi ve sosyal gelişimi için düzenlediğimiz aktiviteler",
+        "activities.categories.title": "Aktivite Kategorileri",
+        "activities.category.religious": "Dini Aktiviteler",
+        "activities.category.religious.desc": "Dini eğitim ve manevi gelişim programları",
+        "activities.category.education": "Eğitim Programları",
+        "activities.category.education.desc": "Çeşitli eğitim ve öğretim faaliyetleri",
+        "activities.category.social": "Sosyal Etkinlikler",
+        "activities.category.social.desc": "Toplumsal birliktelik ve kaynaşma etkinlikleri",
+        "activities.category.youth": "Gençlik Programları",
+        "activities.category.youth.desc": "Gençlere yönelik özel aktiviteler",
+        "activities.category.charity": "Yardım ve Bağış",
+        "activities.category.charity.desc": "Hayır işleri ve yardım kampanyaları",
+        "activities.category.special": "Özel Günler",
+        "activities.category.special.desc": "Dini bayramlar ve özel gün etkinlikleri",
+        "activities.recent.title": "Son Aktiviteler",
+        "activities.upcoming.title": "Yaklaşan Etkinlikler",
+        "activities.contact.title": "Aktiviteler Hakkında Bilgi",
+        "activities.contact.desc": "Aktivitelerimiz hakkında detaylı bilgi almak için bizimle iletişime geçin:",
+        "activities.sports.title": "Sportsaktiviteter",
+        "activities.women.title": "Kvinnegruppe",
+        "activities.youth.title": "Ungdom Gruppe",
+
+        // Hajj and Umrah Page
+        "page.hajj.title": "Hac ve Umre - Diyanet Mevlana Moske",
+        "hajj.hero.title": "🕋 Hac ve Umre Hizmetleri",
+        "hajj.hero.subtitle": "Kutsal topraklara manevi yolculuğunuzda size rehberlik ediyoruz",
+        "hajj.hero.feature1": "Rehberli Hac Turu",
+        "hajj.hero.feature2": "Umre Organizasyonu",
+        "hajj.hero.feature3": "Manevi Rehberlik",
+        "hajj.title": "🕋 Hac Hizmetleri",
+        "hajj.subtitle": "Müslümanların beşinci farzı olan hac ibadeti için rehberlik",
+        "hajj.about.title": "Hac Nedir?",
+        "hajj.about.description": "Hac, her Müslümanın hayatında bir kez yerine getirmesi gereken kutsal bir ibadettir. Bu manevi yolculukta size eşlik etmek ve rehberlik etmek için buradayız.",
+        "hajj.services.title": "Hizmetlerimiz",
+        "hajj.services.item1": "Hac öncesi eğitim ve hazırlık seminerleri",
+        "hajj.services.item2": "Deneyimli rehber eşliğinde grup organizasyonu",
+        "hajj.services.item3": "Konaklama ve ulaşım düzenlemeleri",
+        "hajj.services.item4": "Hac ritüelleri konusunda detaylı bilgilendirme",
+        "hajj.contact.title": "Hac Başvuruları İçin",
+        "hajj.contact.description": "Hac organizasyonumuz hakkında detaylı bilgi almak ve başvuru yapmak için:",
+        "umrah.title": "🌙 Umre Hizmetleri",
+        "umrah.subtitle": "Yıl boyunca düzenlenen umre ziyaretleri",
+        "umrah.about.title": "Umre Nedir?",
+        "umrah.about.description": "Umre, Mekke'de gerçekleştirilen ve yıl boyunca yapılabilen kutsal bir ziyarettir. Bu mübarek yolculukta size eşlik ederek manevi deneyiminizi destekliyoruz.",
+        "umrah.services.title": "Hizmetlerimiz",
+        "umrah.services.item1": "Yıl boyunca umre organizasyonları",
+        "umrah.services.item2": "Umre öncesi eğitim programları",
+        "umrah.services.item3": "Deneyimli rehber eşliğinde ziyaret",
+        "umrah.services.item4": "Medine ziyareti dahil paket programlar",
+        "umrah.contact.title": "Umre Başvuruları İçin",
+        "umrah.contact.description": "Umre organizasyonlarımız hakkında bilgi almak ve rezervasyon yaptırmak için:",
 
         // Dershane Page
         "dershane.title": "📚 Dershane",
@@ -471,7 +530,98 @@ const translations = {
         "footer.contact.address": "Adres:",
         "footer.contact.address.text": "Dusavikveien 35 4007, Stavanger, Norway",
         "footer.map.title": "Konum",
-        "footer.copyright": "© 2025 Diyanet Mevlana Moske. Tüm hakları saklıdır."
+        "footer.copyright": "© 2025 Diyanet Mevlana Moske. Tüm hakları saklıdır.",
+
+        // Funeral Form
+        "page.funeral.title": "Cenaze Formu - Diyanet Mevlana Moske",
+        "funeral.title": "Cenaze Formu",
+        "funeral.description": "Cenaze hizmetleri için gerekli bilgileri doldurunuz.",
+        "funeral.form.title": "Cenaze Bildirimi",
+        "funeral.form.subtitle": "Lütfen aşağıdaki bilgileri eksiksiz doldurunuz.",
+
+        // Deceased Information
+        "funeral.deceased.title": "Vefat Eden Kişi Bilgileri",
+        "funeral.deceased.name": "Ad Soyad",
+        "funeral.deceased.gender": "Cinsiyet",
+        "funeral.deceased.birth.date": "Doğum Tarihi",
+        "funeral.deceased.death.date": "Vefat Tarihi",
+        "funeral.deceased.nationality": "Uyruk",
+        "funeral.deceased.id": "TC Kimlik No / Personnummer",
+        "funeral.death.location": "Vefat Yeri",
+
+        // Applicant Information
+        "funeral.applicant.title": "Başvuru Sahibi Bilgileri",
+        "funeral.applicant.name": "Ad Soyad",
+        "funeral.applicant.relation": "Yakınlık Derecesi",
+        "funeral.applicant.phone": "Telefon",
+        "funeral.applicant.email": "E-posta",
+        "funeral.applicant.address": "Adres",
+
+        // Relations
+        "funeral.relation.spouse": "Eş",
+        "funeral.relation.child": "Çocuk",
+        "funeral.relation.mother": "Anne",
+        "funeral.relation.father": "Baba",
+        "funeral.relation.sibling": "Kardeş",
+        "funeral.relation.other": "Diğer",
+
+        // Services
+        "funeral.services.title": "Cenaze Hizmetleri",
+        "funeral.services.requested": "Talep Edilen Hizmetler",
+        "funeral.services.gusul": "Gusül Hizmeti",
+        "funeral.services.prayer": "Cenaze Namazı",
+        "funeral.services.imam": "İmam Refakati",
+        "funeral.services.burial": "Defin İşlemi",
+        "funeral.preferred.date": "Tercih Edilen Tarih",
+        "funeral.preferred.time": "Tercih Edilen Saat",
+        "funeral.burial.location": "Defin Yeri",
+
+        // Additional Information
+        "funeral.additional.title": "Ek Bilgiler",
+        "funeral.special.requests": "Özel İstekler / Notlar",
+        "funeral.family.size": "Tahmini Katılımcı Sayısı",
+
+        // Form Actions
+        "funeral.form.submit": "Formu Gönder",
+        "funeral.form.note": "* ile işaretli alanlar zorunludur. Formunuz gönderildikten sonra sizinle iletişime geçilecektir.",
+
+        // Success Messages
+        "funeral.success.title": "Form Başarıyla Gönderildi",
+        "funeral.success.message": "Cenaze form bildiriminiz alınmıştır. En kısa sürede sizinle iletişime geçilecektir.",
+
+        // Information Cards
+        "funeral.info.title": "Önemli Bilgiler",
+        "funeral.info.emergency.title": "Acil Durumlar",
+        "funeral.info.emergency.text": "Acil cenaze durumları için 7/24 ulaşabileceğiniz telefon: +47 40 14 40 08",
+        "funeral.info.timing.title": "Zaman Planlaması",
+        "funeral.info.timing.text": "Cenaze hizmetleri genellikle vefat tarihinden sonraki 24-48 saat içinde planlanır.",
+        "funeral.info.support.title": "Destek",
+        "funeral.info.support.text": "Bu zor zamanda ailenizin yanındayız. Her türlü destek için bizimle iletişime geçin.",
+
+        // Funeral Fund
+        "page.funeral.fund.title": "Cenaze Fonu - Diyanet Mevlana Moske",
+        "funeral.fund.title": "Cenaze Fonu",
+        "funeral.fund.subtitle": "Rogaland Muslimforening - Mevlana Moské Diyanet Begravelsesfond",
+        "funeral.fund.name": "Mevlana Moské Diyanet – Begravelsesfond",
+        "funeral.fund.description": "Müslümanların zor anlarında yanlarında olmak ve zorlu günleri kolaylaştırmak için, 1995 yılında Rogaland Muslimforening bünyesinde Cenaze Fonu kurulmuştur. Fon bugün de aynı amaç ve özveriyle hizmet vermeye devam etmektedir.",
+        "funeral.fund.services.title": "Hizmetlerimiz",
+        "funeral.fund.services.religious.title": "Dini Vecibeler",
+        "funeral.fund.services.religious.description": "Cenaze İslami esaslara uygun olarak gerçekleştirilir.",
+        "funeral.fund.services.transport.title": "Nakliye",
+        "funeral.fund.services.transport.description": "Merhum uçak ve karayolu ile güvenli şekilde ana vatana nakledilir.",
+        "funeral.fund.services.official.title": "Resmi İşlemler",
+        "funeral.fund.services.official.description": "Deneyimli personelimiz cenaze ve nakliye ile ilgili tüm gerekli resmi işlemleri üstlenir.",
+        "funeral.fund.registration.title": "Kayıt Şartları",
+        "funeral.fund.registration.family": "Tüm aileyi fona kaydettirmek için.",
+        "funeral.fund.registration.requirement": "Cenaze Fonuna üye olabilmek için Rogaland Muslimforening (RGM) üyesi olmak gerekmektedir.",
+        "funeral.fund.contact.title": "Bilgi ve Kayıt",
+        "funeral.fund.contact.description": "Fiyatlar ve üyelik hakkında bilgi için lütfen iletişime geçin:",
+        "funeral.fund.info.established.title": "1995'te Kuruldu",
+        "funeral.fund.info.established.text": "25 yılı aşkın süredir Müslüman ailelere yardım deneyimi.",
+        "funeral.fund.info.support.title": "Destek ve Özen",
+        "funeral.fund.info.support.text": "En zor anlarda ailenin yanındayız.",
+        "funeral.fund.info.reliable.title": "Güvenilir Hizmet",
+        "funeral.fund.info.reliable.text": "Tüm resmi işlemlerin profesyonel şekilde yürütülmesi."
     },
 
     no: {
@@ -483,6 +633,7 @@ const translations = {
         "nav.about": "Om oss",
         "nav.construction": "Moské Byggeri",
         "nav.membership": "Medlemskap",
+        "nav.hac": "Hajj & Umrah",
         "nav.contact": "Kontakt",
         "nav.prayer": "Bønnetider",
 
@@ -527,11 +678,69 @@ const translations = {
         "nav.education.dershane": "Studiesal",
         "nav.education.norwegian": "Norskundervisning",
         "nav.education.quran": "Korankurs",
+        "nav.activities": "Aktiviteter",
+        "nav.funeral": "Begravelsesskjema",
+        "nav.funeral.fund": "Begravelsesfond",
 
         // Page Titles
         "page.dershane.title": "Studiesal - Diyanet Mevlana Moske",
         "page.norwegian.title": "Norskundervisning - Diyanet Mevlana Moske",
         "page.quran.title": "Korankurs - Diyanet Mevlana Moske",
+        "page.activities.title": "Aktiviteter - Diyanet Mevlana Moske",
+
+        // Activities Page
+        "activities.title": "🌟 Aktiviteter i moskee",
+        "activities.subtitle": "Aktiviteter vi organiserer for vårt samfunns åndelige og sosiale utvikling",
+        "activities.categories.title": "Aktivitetskategorier",
+        "activities.category.religious": "Religiøse Aktiviteter",
+        "activities.category.religious.desc": "Religiøs utdanning og åndelige utviklingsprogrammer",
+        "activities.category.education": "Utdanningsprogrammer",
+        "activities.category.education.desc": "Ulike utdannings- og undervisningsaktiviteter",
+        "activities.category.social": "Sosiale Arrangementer",
+        "activities.category.social.desc": "Samfunnssamhold og sosiale arrangementer",
+        "activities.category.youth": "Ungdomsprogrammer",
+        "activities.category.youth.desc": "Spesielle aktiviteter for ungdom",
+        "activities.category.charity": "Hjelp og Donasjoner",
+        "activities.category.charity.desc": "Veldedige arbeider og hjelpekampanjer",
+        "activities.category.special": "Spesielle Dager",
+        "activities.category.special.desc": "Religiøse høytider og spesielle arrangement",
+        "activities.recent.title": "Nylige Aktiviteter",
+        "activities.upcoming.title": "Kommende Arrangementer",
+        "activities.contact.title": "Informasjon om Aktiviteter",
+        "activities.contact.desc": "Ta kontakt med oss for detaljert informasjon om våre aktiviteter:",
+        "activities.sports.title": "Sportsaktiviteter",
+        "activities.women.title": "Kvinnegruppe",
+        "activities.youth.title": "Ungdom Gruppe",
+
+        // Hajj and Umrah Page
+        "page.hajj.title": "Hajj og Umrah - Diyanet Mevlana Moske",
+        "hajj.hero.title": "🕋 Hajj og Umrah Tjenester",
+        "hajj.hero.subtitle": "Vi veileder deg på din åndelige reise til de hellige landene",
+        "hajj.hero.feature1": "Veiledet Hajj-tur",
+        "hajj.hero.feature2": "Umrah Organisasjon",
+        "hajj.hero.feature3": "Åndelig Veiledning",
+        "hajj.title": "🕋 Hajj Tjenester",
+        "hajj.subtitle": "Veiledning for hajj, muslimenes femte plikt",
+        "hajj.about.title": "Hva er Hajj?",
+        "hajj.about.description": "Hajj er en hellig tilbedelse som enhver muslim må utføre en gang i livet. Vi er her for å følge deg og veilede deg på denne åndelige reisen.",
+        "hajj.services.title": "Våre Tjenester",
+        "hajj.services.item1": "Utdanning og forberedelsesseminarer før hajj",
+        "hajj.services.item2": "Gruppeorganisasjon med erfaren guide",
+        "hajj.services.item3": "Overnatting og transportarrangementer",
+        "hajj.services.item4": "Detaljert informasjon om hajj-ritualer",
+        "hajj.contact.title": "For Hajj-søknader",
+        "hajj.contact.description": "For å få detaljert informasjon om vår hajj-organisasjon og søke:",
+        "umrah.title": "🌙 Umrah Tjenester",
+        "umrah.subtitle": "Umrah-besøk organisert gjennom året",
+        "umrah.about.title": "Hva er Umrah?",
+        "umrah.about.description": "Umrah er et hellig besøk utført i Mekka og kan gjøres gjennom året. Vi støtter din åndelige opplevelse ved å følge deg på denne velsignede reisen.",
+        "umrah.services.title": "Våre Tjenester",
+        "umrah.services.item1": "Umrah-organisasjoner gjennom året",
+        "umrah.services.item2": "Utdanningsprogrammer før umrah",
+        "umrah.services.item3": "Besøk med erfaren guide",
+        "umrah.services.item4": "Pakker inkludert Medina-besøk",
+        "umrah.contact.title": "For Umrah-søknader",
+        "umrah.contact.description": "For å få informasjon om våre umrah-organisasjoner og gjøre reservasjoner:",
 
         // Dershane Page
         "dershane.title": "📚 Studiesal",
@@ -764,7 +973,7 @@ const translations = {
         "membership.contact.address": "Dusavikveien 35, 2 etg, 4007 Stavanger",
 
         // Construction Page
-        "construction.title": "🕌 Vår Nye Moské Byggeri",
+        "construction.title": "🕌 Byggning av ny moske",
         "construction.subtitle": "Et stort veldedighetsprosjekt for fremtidige generasjoner",
 
         "construction.intro.title": "Kjære søsken,",
@@ -945,7 +1154,98 @@ const translations = {
         "footer.contact.address": "Adresse:",
         "footer.contact.address.text": "Dusavikveien 35 4007, Stavanger, Norway",
         "footer.map.title": "Lokasjon",
-        "footer.copyright": "© 2025 Diyanet Mevlana Moske. Alle rettigheter forbeholdt."
+        "footer.copyright": "© 2025 Diyanet Mevlana Moske. Alle rettigheter forbeholdt.",
+
+        // Funeral Form
+        "page.funeral.title": "Begravelsesskjema - Diyanet Mevlana Moske",
+        "funeral.title": "Begravelsesskjema",
+        "funeral.description": "Fyll ut nødvendig informasjon for begravelsestjenester.",
+        "funeral.form.title": "Begravelsesmelding",
+        "funeral.form.subtitle": "Vennligst fyll ut informasjonen nedenfor fullstendig.",
+
+        // Deceased Information
+        "funeral.deceased.title": "Informasjon om avdøde",
+        "funeral.deceased.name": "Navn",
+        "funeral.deceased.gender": "Kjønn",
+        "funeral.deceased.birth.date": "Fødselsdato",
+        "funeral.deceased.death.date": "Dødsdato",
+        "funeral.deceased.nationality": "Nasjonalitet",
+        "funeral.deceased.id": "Personnummer / ID-nummer",
+        "funeral.death.location": "Dødssted",
+
+        // Applicant Information
+        "funeral.applicant.title": "Søkerinformasjon",
+        "funeral.applicant.name": "Navn",
+        "funeral.applicant.relation": "Relasjon til avdøde",
+        "funeral.applicant.phone": "Telefon",
+        "funeral.applicant.email": "E-post",
+        "funeral.applicant.address": "Adresse",
+
+        // Relations
+        "funeral.relation.spouse": "Ektefelle",
+        "funeral.relation.child": "Barn",
+        "funeral.relation.mother": "Mor",
+        "funeral.relation.father": "Far",
+        "funeral.relation.sibling": "Søsken",
+        "funeral.relation.other": "Annet",
+
+        // Services
+        "funeral.services.title": "Begravelsestjenester",
+        "funeral.services.requested": "Ønskede tjenester",
+        "funeral.services.gusul": "Gusul-tjeneste",
+        "funeral.services.prayer": "Begravelsesbønn",
+        "funeral.services.imam": "Imam-ledsagelse",
+        "funeral.services.burial": "Begravelse",
+        "funeral.preferred.date": "Ønsket dato",
+        "funeral.preferred.time": "Ønsket tid",
+        "funeral.burial.location": "Begravelsessted",
+
+        // Additional Information
+        "funeral.additional.title": "Tilleggsinformasjon",
+        "funeral.special.requests": "Spesielle ønsker / Notater",
+        "funeral.family.size": "Estimert antall deltakere",
+
+        // Form Actions
+        "funeral.form.submit": "Send skjema",
+        "funeral.form.note": "* markerte felt er obligatoriske. Du vil bli kontaktet etter at skjemaet er sendt.",
+
+        // Success Messages
+        "funeral.success.title": "Skjema sendt vellykket",
+        "funeral.success.message": "Din begravelsesmelding er mottatt. Vi vil kontakte deg så snart som mulig.",
+
+        // Information Cards
+        "funeral.info.title": "Viktig informasjon",
+        "funeral.info.emergency.title": "Nødsituasjoner",
+        "funeral.info.emergency.text": "For akutte begravelsessituasjoner kan du nå oss 24/7 på: +47 40 14 40 08",
+        "funeral.info.timing.title": "Tidsplanlegging",
+        "funeral.info.timing.text": "Begravelsestjenester planlegges vanligvis innen 24-48 timer etter dødsdato.",
+        "funeral.info.support.title": "Støtte",
+        "funeral.info.support.text": "Vi er ved familiens side i denne vanskelige tiden. Kontakt oss for all slags støtte.",
+
+        // Funeral Fund
+        "page.funeral.fund.title": "Begravelsesfond - Diyanet Mevlana Moske",
+        "funeral.fund.title": "Begravelsesfond",
+        "funeral.fund.subtitle": "Rogaland Muslimforening - Mevlana Moské Diyanet Begravelsesfond",
+        "funeral.fund.name": "Mevlana Moské Diyanet – Begravelsesfond",
+        "funeral.fund.description": "For å stå ved muslimenes side i deres tunge stunder og gjøre vanskelige dager lettere, ble Begravelsesfondet etablert i 1995 under Rogaland Muslimforening. Fondet fortsetter i dag å tjene med samme hensikt og omtanke.",
+        "funeral.fund.services.title": "Våre tjenester",
+        "funeral.fund.services.religious.title": "Religiøse plikter",
+        "funeral.fund.services.religious.description": "Begravelsen utføres i samsvar med islamske prinsipper.",
+        "funeral.fund.services.transport.title": "Transport",
+        "funeral.fund.services.transport.description": "Den avdøde fraktes trygt med fly og bil helt til hjemlandet.",
+        "funeral.fund.services.official.title": "Offisielle prosesser",
+        "funeral.fund.services.official.description": "Vårt erfarne personale tar seg av alle nødvendige formelle prosesser knyttet til begravelse og transport.",
+        "funeral.fund.registration.title": "Registreringsvilkår",
+        "funeral.fund.registration.family": "For å kunne melde inn hele familien i fondet.",
+        "funeral.fund.registration.requirement": "For å bli medlem i Begravelsesfondet må man også være medlem i Rogaland Muslimforening (RGM).",
+        "funeral.fund.contact.title": "Informasjon og påmelding",
+        "funeral.fund.contact.description": "For informasjon om priser og medlemskap, vennligst ta kontakt:",
+        "funeral.fund.info.established.title": "Etablert 1995",
+        "funeral.fund.info.established.text": "Over 25 år med erfaring i å hjelpe muslimske familier.",
+        "funeral.fund.info.support.title": "Støtte og omsorg",
+        "funeral.fund.info.support.text": "Vi står ved familiens side i de vanskeligste øyeblikkene.",
+        "funeral.fund.info.reliable.title": "Pålitelig tjeneste",
+        "funeral.fund.info.reliable.text": "Profesjonell håndtering av alle formelle prosesser."
     }
 };
 
