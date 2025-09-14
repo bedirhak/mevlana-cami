@@ -58,29 +58,62 @@
             </div>
         </section>
 
-        <section class="mevlana-banner">
-            <div class="banner-container">
-
-                <div class="home-banners">
-                    <img src="assets/images/banner.png" alt="Mevlana Banner" class="banner-img">
+        <section class="duyuru">
+            <div class="container duyuru-container">
+                <div class="duyuru-content">
+                    <div class="duyuru-image">
+                        <img src="assets/images/duyuru.jpg" alt="Duyuru" class="duyuru-img">
+                    </div>
+                    <div class="duyuru-text">
+                        <h2 data-translate="duyuru.title">📢 Duyuru</h2>
+                        <div class="duyuru-message">
+                            <p data-translate="duyuru.message.line1">
+                                Undervisningen for barna våre har startet i moskeen.
+                            </p>
+                            <p data-translate="duyuru.message.line2">
+                                Vennligst send barna og ungdommene våre i alderen 4 til 25 år til moskeen. Det finnes
+                                også undervisning for voksne.
+                            </p>
+                            <p data-translate="duyuru.message.line3">
+                                Dersom dere opplever problemer med å sende barna, kan dere ta kontakt med lærerne våre
+                                eller moskeens ledelse. Ledelsen kan også hjelpe med transport. Det viktigste er at vi
+                                sender barna våre til moskeen.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="home-banners">
-                    <img src="assets/images/banner2.png" alt="Mevlana Banner" class="banner-img">
+                <div class="duyuru-image">
+                    <p>Ekim ayi icinde kermesimiz var yakin zamanda tarih verilecektir</p>
+                    <img src="assets/images/asure1.png" alt="">
+                    <img src="assets/images/asure2.png" alt="">
                 </div>
             </div>
+        </section>
+        <div class="home-bg">
 
+            <section class="mevlana-banner">
+                <div class="banner-container">
 
-            <h1 class="banner-title-home">Byggning av ny moske</h1>
-            <div class="banner-container">
-
-                <div class="home-banners">
-                    <img src="assets/images/banner3.png" alt="Mevlana Banner" class="banner-img">
+                    <div class="home-banners">
+                        <img src="assets/images/banner.png" alt="Mevlana Banner" class="banner-img">
+                    </div>
+                    <div class="home-banners">
+                        <img src="assets/images/banner2.png" alt="Mevlana Banner" class="banner-img">
+                    </div>
                 </div>
-                <div class="home-banners">
-                    <img src="assets/images/banner4.png" alt="Mevlana Banner" class="banner-img">
-                </div>
 
-                <!-- <div class="banner-content">
+
+                <h1 class="banner-title-home">Byggning av ny moske</h1>
+                <div class="banner-container">
+
+                    <div class="home-banners">
+                        <img src="assets/images/banner3.png" alt="Mevlana Banner" class="banner-img">
+                    </div>
+                    <div class="home-banners">
+                        <img src="assets/images/banner4.png" alt="Mevlana Banner" class="banner-img">
+                    </div>
+
+                    <!-- <div class="banner-content">
                     <div class="banner-text">
                         <h2 data-translate="banner.title">Mevlana'nın Işığında</h2>
                         <p data-translate="banner.quote">"Gel, ne olursan ol, yine gel..."</p>
@@ -88,51 +121,54 @@
                             birleşen bir camiyiz.</p>
                     </div>
                 </div> -->
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <section class="donation-terms">
-            <div class="container">
-                <h2 data-translate="donation.terms.title">Bağış Şartları</h2>
-                <div class="donation-terms-content">
-                    <p data-translate="donation.terms.short.description">Camimize yapacağınız bağışlarla ilgili
-                        önemli
-                        bilgiler ve şartlar hakkında detaylı bilgi almak için aşağıdaki butona tıklayınız.</p>
-                    <div class="donation-terms-qr">
-                        <img src="assets/images/vippsQr.png" alt="Vipps QR Code" class="vipps-qr-image">
-                        <p class="qr-description" data-translate="donation.qr.description">QR kodu tarayarak hızlıca
-                            bağış yapabilirsiniz</p>
+            <section class="donation-terms">
+                <div class="container">
+                    <h2 data-translate="donation.terms.title">Bağış Şartları</h2>
+                    <div class="donation-terms-content">
+                        <p data-translate="donation.terms.short.description">Camimize yapacağınız bağışlarla ilgili
+                            önemli
+                            bilgiler ve şartlar hakkında detaylı bilgi almak için aşağıdaki butona tıklayınız.</p>
+                        <div class="donation-terms-qr">
+                            <img src="assets/images/vippsQr.png" alt="Vipps QR Code" class="vipps-qr-image">
+                            <p class="qr-description" data-translate="donation.qr.description">QR kodu tarayarak hızlıca
+                                bağış yapabilirsiniz</p>
+                        </div>
+                        <button id="open-donation-terms" class="donation-terms-btn"
+                            data-translate="donation.terms.button">Bağış
+                            Şartlarını Görüntüle</button>
+
                     </div>
-                    <button id="open-donation-terms" class="donation-terms-btn"
-                        data-translate="donation.terms.button">Bağış
-                        Şartlarını Görüntüle</button>
-
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Donation Terms Modal -->
-        <div id="donation-terms-modal" class="modal">
-            <div class="modal-content pdf-modal">
-                <span class="close-button">&times;</span>
-                <h2 data-translate="donation.terms.title">Bağış Şartları</h2>
-                <div class="pdf-container">
-                    <iframe id="pdf-viewer" src="" width="100%" height="600" style="border: none; border-radius: 8px;">
-                        <p data-translate="donation.terms.pdf.fallback">PDF görüntüleyiciniz bu dosyayı desteklemiyor.
-                            <a id="pdf-download-link" href="" target="_blank"
-                                data-translate="donation.terms.pdf.download">Buraya tıklayarak indirin</a>.
-                        </p>
-                    </iframe>
-                </div>
-                <div class="pdf-actions">
-                    <a id="pdf-open-new-tab" href="" target="_blank" class="pdf-btn">
-                        <i class="fas fa-external-link-alt"></i>
-                        <span data-translate="donation.terms.pdf.open">Yeni Sekmede Aç</span>
-                    </a>
-                    <a id="pdf-download" href="" download class="pdf-btn secondary">
-                        <i class="fas fa-download"></i>
-                        <span data-translate="donation.terms.pdf.download.btn">İndir</span>
-                    </a>
+            <!-- Donation Terms Modal -->
+            <div id="donation-terms-modal" class="modal">
+                <div class="modal-content pdf-modal">
+                    <span class="close-button">&times;</span>
+                    <h2 data-translate="donation.terms.title">Bağış Şartları</h2>
+                    <div class="pdf-container">
+                        <iframe id="pdf-viewer" src="" width="100%" height="600"
+                            style="border: none; border-radius: 8px;">
+                            <p data-translate="donation.terms.pdf.fallback">PDF görüntüleyiciniz bu dosyayı
+                                desteklemiyor.
+                                <a id="pdf-download-link" href="" target="_blank"
+                                    data-translate="donation.terms.pdf.download">Buraya tıklayarak indirin</a>.
+                            </p>
+                        </iframe>
+                    </div>
+                    <div class="pdf-actions">
+                        <a id="pdf-open-new-tab" href="" target="_blank" class="pdf-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-translate="donation.terms.pdf.open">Yeni Sekmede Aç</span>
+                        </a>
+                        <a id="pdf-download" href="" download class="pdf-btn secondary">
+                            <i class="fas fa-download"></i>
+                            <span data-translate="donation.terms.pdf.download.btn">İndir</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

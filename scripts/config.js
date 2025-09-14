@@ -25,6 +25,12 @@ const translations = {
         "home.welcome": "Hoş Geldiniz",
         "home.description": "Diyanet Mevlana Moske'ye hoş geldiniz. Toplumumuza hizmet etmek için buradayız.",
 
+        // Duyuru
+        "duyuru.title": "📢 Duyuru",
+        "duyuru.message.line1": "Çocuklarımız için cami eğitimi başlamıştır.",
+        "duyuru.message.line2": "Lütfen 4-25 yaş arası çocuk ve gençlerimizi camiye gönderin. Yetişkinler için de eğitim bulunmaktadır.",
+        "duyuru.message.line3": "Çocukları gönderme konusunda sorun yaşarsanız öğretmenlerimiz veya cami yönetimi ile iletişime geçebilirsiniz. Yönetim ulaşım konusunda da yardımcı olabilir. En önemlisi çocuklarımızı camiye göndermektir.",
+
         // Banner
         "banner.title": "Mevlana'nın Işığında",
         "banner.quote": "\"Gel, ne olursan ol, yine gel...\"",
@@ -631,7 +637,7 @@ const translations = {
         // Navigation
         "nav.home": "Hjem",
         "nav.about": "Om oss",
-        "nav.construction": "Moské Byggeri",
+        "nav.construction": "Ny Moske Skal Bygges",
         "nav.membership": "Medlemskap",
         "nav.hac": "Hajj & Umrah",
         "nav.contact": "Kontakt",
@@ -640,7 +646,7 @@ const translations = {
         // Page Titles
         "page.home.title": "Diyanet Mevlana Moske",
         "page.about.title": "Om oss - Diyanet Mevlana Moske",
-        "page.construction.title": "Moské Byggeri - Diyanet Mevlana Moske",
+        "page.construction.title": "Ny Moske Skal Bygges - Diyanet Mevlana Moske",
         "page.membership.title": "Medlemskap - Diyanet Mevlana Moske",
         "page.contact.title": "Kontakt - Diyanet Mevlana Moske",
         "page.prayer.title": "Bønnetider - Diyanet Mevlana Moske",
@@ -648,6 +654,12 @@ const translations = {
         // Home Page
         "home.welcome": "Velkommen",
         "home.description": "Velkommen til Diyanet Mevlana Moske. Vi er her for å tjene vårt samfunn.",
+
+        // Duyuru
+        "duyuru.title": "📢 Kunngjøring",
+        "duyuru.message.line1": "Undervisningen for barna våre har startet i moskeen.",
+        "duyuru.message.line2": "Vennligst send barna og ungdommene våre i alderen 4 til 25 år til moskeen. Det finnes også undervisning for voksne.",
+        "duyuru.message.line3": "Dersom dere opplever problemer med å sende barna, kan dere ta kontakt med lærerne våre eller moskeens ledelse. Ledelsen kan også hjelpe med transport. Det viktigste er at vi sender barna våre til moskeen.",
 
         // Banner
         "banner.title": "I Mevlanas lys",
