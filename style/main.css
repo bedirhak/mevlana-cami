@@ -3302,13 +3302,13 @@ i.mobile-menu-icon {
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #2c5530, #3d7440);
+    background: transparent;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0 auto 1.5rem;
-    box-shadow: 0 8px 20px rgba(44, 85, 48, 0.3);
 }
 
 .feature-icon i {
@@ -5351,7 +5351,7 @@ i.mobile-menu-icon {
 }
 
 .feature-item i {
-    color: #ffd700;
+    color: #1e3a21;
     width: 20px;
 }
 
