@@ -153,12 +153,13 @@ function getTranslation(key) {
 
 // Mobile Menu Fonksiyonu
 function setupMobileMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
     const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
     const navMenu = document.querySelector('.nav-menu');
 
-    if (mobileMenuIcon && navMenu) {
-        // Menu icon'a tıklanınca menüyü aç/kapat
-        mobileMenuIcon.addEventListener('click', function (e) {
+    if (menuToggle && mobileMenuIcon && navMenu) {
+        // Menu toggle'a tıklanınca menüyü aç/kapat
+        menuToggle.addEventListener('click', function (e) {
             e.stopPropagation();
             navMenu.classList.toggle('open');
 
