@@ -136,6 +136,33 @@ a:active {
     border-color: #2c5530;
 }
 
+/* Membership Link */
+.membership-link {
+    margin: 0 10px;
+}
+
+.membership-btn {
+    background-color: #4a7c59;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #4a7c59;
+}
+
+.membership-btn:hover {
+    background-color: #2c5530;
+    border-color: #2c5530;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.membership-btn:visited {
+    color: white;
+}
+
 /* Navigation Menu */
 .nav-menu {
     position: absolute;
@@ -282,7 +309,16 @@ i.mobile-menu-icon {
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .header-nav {
-        gap: 15px;
+        gap: 10px;
+    }
+
+    .membership-link {
+        margin: 0 5px;
+    }
+
+    .membership-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
     }
 
     .mobile-menu-icon {
@@ -6597,4 +6633,10 @@ i.mobile-menu-icon {
     .duyuru-image-container {
         width: 90% !important;
     }
+}
+
+.menu-links-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }

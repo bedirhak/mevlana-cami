@@ -646,7 +646,7 @@ const translations = {
         "nav.home": "Hjem",
         "nav.about": "Om oss",
         "nav.construction": "Ny Moske Skal Bygges",
-        "nav.membership": "Medlemskap",
+        "nav.membership": "Bli Medlem",
         "nav.hac": "Hajj & Umrah",
         "nav.contact": "Kontakt",
         "nav.prayer": "Bønnetider",
@@ -655,7 +655,7 @@ const translations = {
         "page.home.title": "Diyanet Mevlana Moske",
         "page.about.title": "Om oss - Diyanet Mevlana Moske",
         "page.construction.title": "Ny Moske Skal Bygges - Diyanet Mevlana Moske",
-        "page.membership.title": "Medlemskap - Diyanet Mevlana Moske",
+        "page.membership.title": "Bli Medlem - Diyanet Mevlana Moske",
         "page.contact.title": "Kontakt - Diyanet Mevlana Moske",
         "page.prayer.title": "Bønnetider - Diyanet Mevlana Moske",
 
